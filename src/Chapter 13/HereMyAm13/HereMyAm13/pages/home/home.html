@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Here My Am! (13) Home</title>
+    
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet">
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+    
+    <link href="/css/default.css" rel="stylesheet">
+    <link href="/pages/home/home.css" rel="stylesheet">
+    <script src="/pages/home/home.js"></script>
+</head>
+<body>
+    <div id="mainContent" class="fragment">
+        <header id="header" aria-label="Header content" role="banner">
+            <!-- This is included by the templates for a page control, but we don't need it
+                 since we don't navigate from other pages. We keep it here for use in later
+                 revisions of this app. -->
+            <!-- <button class="win-backbutton" aria-label="Back" disabled></button> -->
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Here My Am! (13)</span>
+            </h1>
+        </header>
+        <section id="section" aria-label="Main content" role="main">
+            <div id="photoSection" class="subsection" aria-label="Photo section">
+                <h2 class="group-title" role="heading">Photo</h2>            
+                <!-- Set tabindex and an access key for keyboard support -->
+                <img id="photo" class="graphic" src="/images/taphere.png" tabindex="1"
+                    accesskey="N" alt="Tap to capture image from camera" role="img" />
+            </div>
+            <div id="locationSection" class="subsection" aria-label="Location section">
+                <h2 class="group-title" role="heading">Location</h2>            
+
+                <!-- Bing Maps will be its own tabstop; we don't want to duplicate with the div -->
+                <div id="mapDiv" class="graphic">
+                    <!-- We'll show this element if the map fails to instantiate, and set a positive tabindex -->
+                    <img id="errorImage" src="/images/maperror.png" tabindex="-1" role="img"
+                        accesskey="R" alt="Could not create the map. Tap to try again."/>
+                </div>
+               
+                <div id="floatingError" class="win-type-x-large">Unable to obtain geolocation; check<br />permissions and use the app bar to try again.</div>
+            </div>
+
+            <!-- Note that the anchor here is now mapDiv rather than the previously used iframe -->
+            <div id="retryFlyout" data-win-control="WinJS.UI.Flyout" aria-label="Trying geolocation"
+                data-win-options="{anchor: 'mapDiv', placement: 'bottom', alignment: 'center'}">
+                <div class="win-type-large">Attempting to obtain geolocation...</div>                
+            </div>
+
+        </section>
+
+    </div>
+</body>
+</html>

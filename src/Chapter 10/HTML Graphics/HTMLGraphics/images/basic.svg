@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<svg  xmlns="http://www.w3.org/2000/svg" width="350" height="200">
+    <rect x="0" y="0" width="350" height="200" stroke="#A20" fill="#ACF" stroke-width="2"></rect>
+    <line x1="70" y1="70" x2="180" y2="30" stroke="#A3A" stroke-width="3"></line>
+    <circle cx="240" cy="80" r="40" fill="#FE4" stroke="#F83" stroke-width="3"></circle>
+    <text x="20" y="180" font-family="Arial" font-style="italic" font-size="60" fill="#FFF">Press Start</text>
+</svg>

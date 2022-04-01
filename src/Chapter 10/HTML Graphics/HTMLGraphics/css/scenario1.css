@@ -1,0 +1,22 @@
+﻿/* styles */
+#output {
+    display: -ms-grid;
+    width: 100%;
+    height: 100%;
+    background: #FED;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+    padding: 5px;
+}
+
+#imageElement {
+    -ms-grid-column: 1;
+}
+
+#canvasElement {
+    -ms-grid-column: 2;
+}
+
+#svgElement {
+    -ms-grid-column: 3;
+}

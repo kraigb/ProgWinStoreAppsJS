@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="/js/scenario3.js"></script>
+</head>
+<body>
+    <div data-win-control="SdkSample.ScenarioInput">
+        <p>The StorageFolder's createFileQuery and createFolderQuery methods support a number of other common queries
+           expressed in the CommonFileQuery and CommonFolderQuery enumerations. Use the controls below to choose a library,
+           choose files or folders, then choose a common query. Press the Search button to run the query and see results.</p>
+           
+        <p>            
+            <select id="selectLibrary">
+                <option id="musicLibrary">Music Library</option>
+                <option id="picturesLibrary">Pictures Library</option>
+                <option id="videosLibrary">Videos Library</option>
+            </select>
+
+            <select id="selectItem">
+                <option id="itemFiles">Files</option>
+                <option id="itemFolders">Folders</option>                
+            </select>
+
+            <select id="selectFileQuery">
+                <option>Order by Name</option>
+                <option>Order by Title</option>
+                <option>Order by Date</option>
+                <option>Order by Music Properties</option>
+                <option>Order by Search Rank</option>
+            </select>
+
+            <!-- Initially hidden -->
+            <select id="selectFolderQuery" style="display: none;">
+                <option>Group By Type</option>
+                <option>Group By Tag</option>
+                <option>Group by Date</option>
+                <option>Group by Author</option>
+                <option>Group by Year</option>
+                <option>Group by Month</option>
+                <option>Group by Artist</option>
+                <option>Group by Composer</option>
+                <option>Group by Genre</option>
+                <option>Group by Published Year</option>
+                <option>Group by Rating</option>
+            </select>
+        </p>
+
+        <button id="search">Search</button>
+        
+        <br /><br />
+    </div>
+    <div data-win-control="SdkSample.ScenarioOutput">
+        <div id="output"></div>
+    </div>
+</body>
+</html>

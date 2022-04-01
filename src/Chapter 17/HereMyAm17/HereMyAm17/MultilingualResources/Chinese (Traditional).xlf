@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="zh-Hant" original="HereMyAm17_Multilingual.prilog.xml" tool-id="MultilingualAppToolkit" product-name="HereMyAm17" product-version="Version 1" build-num="1.0.0.0">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="1.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="resources">
+        <trans-unit id="resources\about1" translate="yes" xml:space="preserve">
+          <source>Here My Am!<bpt id="1">&lt;br &gt;</bpt><ept id="1">&lt;/br&gt;</ept>Version 1.0.0.0<bpt id="2">&lt;br &gt;</bpt><ept id="2">&lt;/br&gt;</ept></source>
+          <target state="signed-off">Here My Am!<bpt id="1">&lt;br &gt;</bpt><ept id="1">&lt;/br&gt;</ept>版本號碼 1.0.0.0<bpt id="2">&lt;br &gt;</bpt><ept id="2">&lt;/br&gt;</ept></target>
+        </trans-unit>
+        <trans-unit id="resources\about2" translate="yes" xml:space="preserve">
+          <source>From <bpt id="1">&lt;em&gt;</bpt>Programming Windows 8 Apps with HTML and JavaScript<ept id="1">&lt;/em&gt;</ept><bpt id="2">&lt;br &gt;</bpt><ept id="2">&lt;/br&gt;</ept>by Kraig Brockschmidt<bpt id="3">&lt;br &gt;</bpt><ept id="3">&lt;/br&gt;</ept>kraigb@microsoft.com</source>
+          <target state="signed-off">出自 <bpt id="1">&lt;em&gt;</bpt>Programming Windows 8 Apps with HTML and JavaScript<ept id="1">&lt;/em&gt;</ept><bpt id="2">&lt;br &gt;</bpt><ept id="2">&lt;/br&gt;</ept>作者 Kraig Brockschmidt<bpt id="3">&lt;br &gt;</bpt><ept id="3">&lt;/br&gt;</ept>kraigb@microsoft.com</target>
+        </trans-unit>
+        <trans-unit id="resources\about3" translate="yes" xml:space="preserve">
+          <source>A free eBook Published by Microsoft Press<bpt id="1">&lt;br &gt;</bpt><ept id="1">&lt;/br&gt;</ept><bpt id="2">&lt;a href='http://go.microsoft.com/FWLink/?Linkid=269853'&gt;</bpt>Download Here<ept id="2">&lt;/a&gt;</ept></source>
+          <target state="signed-off">Microsoft Press 出版的免費電子書<bpt id="1">&lt;br &gt;</bpt><ept id="1">&lt;/br&gt;</ept><bpt id="2">&lt;a href='http://go.microsoft.com/FWLink/?Linkid=269853'&gt;</bpt>按此下載<ept id="2">&lt;/a&gt;</ept></target>
+        </trans-unit>
+        <trans-unit id="resources\about_command" translate="yes" xml:space="preserve">
+          <source>About</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">關於</target>
+        </trans-unit>
+        <trans-unit id="resources\app_description" translate="no" xml:space="preserve">
+          <source>Here My Am! (17) has been globalized (removing locale-specific assumptions) and localized into several languages by moving language-specific strings into resource files and providing localized images.</source>
+          <target state="signed-off">Here My Am! (17) 已經全球化 (移除地方色彩) 並將語言字串移動到資源檔以便本土化，並提供翻譯之圖片。</target>
+        </trans-unit>
+        <trans-unit id="resources\app_title" translate="no" xml:space="preserve">
+          <source>Here My Am! (17)</source>
+          <target state="signed-off">Here My Am! (17)</target>
+        </trans-unit>
+        <trans-unit id="resources\appbar_label1" translate="yes" xml:space="preserve">
+          <source>Load picture</source>
+          <target state="signed-off">載入照片</target>
+        </trans-unit>
+        <trans-unit id="resources\appbar_label2" translate="yes" xml:space="preserve">
+          <source>Recent pictures</source>
+          <target state="signed-off">最近使用的圖片</target>
+        </trans-unit>
+        <trans-unit id="resources\appbar_label3" translate="yes" xml:space="preserve">
+          <source>Refresh location</source>
+          <target state="signed-off">更新定位</target>
+        </trans-unit>
+        <trans-unit id="resources\appbar_tooltip1" translate="yes" xml:space="preserve">
+          <source>Load a picture through the file picker</source>
+          <target state="signed-off">從檔案選擇器載入圖片</target>
+        </trans-unit>
+        <trans-unit id="resources\appbar_tooltip2" translate="yes" xml:space="preserve">
+          <source>Browse recent pictures taken in the app</source>
+          <target state="signed-off">瀏覽應用程式最近拍的照片</target>
+        </trans-unit>
+        <trans-unit id="resources\appbar_tooltip3" translate="yes" xml:space="preserve">
+          <source>Refresh your location with current GPS coordinates</source>
+          <target state="signed-off">以目前 GPS 的座標更新您所在的位置</target>
+        </trans-unit>
+        <trans-unit id="resources\aria_about" translate="yes" xml:space="preserve">
+          <source>About</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">關於</target>
+        </trans-unit>
+        <trans-unit id="resources\aria_geolocflyout" translate="yes" xml:space="preserve">
+          <source>Trying geolocation</source>
+          <target state="signed-off">嘗試地理定位</target>
+        </trans-unit>
+        <trans-unit id="resources\aria_header" translate="yes" xml:space="preserve">
+          <source>Header content</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">標頭的內容</target>
+        </trans-unit>
+        <trans-unit id="resources\aria_help" translate="yes" xml:space="preserve">
+          <source>Help</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">説明</target>
+        </trans-unit>
+        <trans-unit id="resources\aria_location" translate="yes" xml:space="preserve">
+          <source>Location section</source>
+          <target state="signed-off">位置部分</target>
+        </trans-unit>
+        <trans-unit id="resources\aria_main" translate="yes" xml:space="preserve">
+          <source>Main content</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">主要內容</target>
+        </trans-unit>
+        <trans-unit id="resources\aria_photo" translate="yes" xml:space="preserve">
+          <source>Photo section</source>
+          <target state="signed-off">照片部分</target>
+        </trans-unit>
+        <trans-unit id="resources\aria_privacy" translate="yes" xml:space="preserve">
+          <source>Privacy</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">隱私</target>
+        </trans-unit>
+        <trans-unit id="resources\error_obtaingeoloc" translate="yes" xml:space="preserve">
+          <source>Unable to obtain geolocation; check<bpt id="1">&lt;br &gt;</bpt><ept id="1">&lt;/br&gt;</ept>permissions and use the app bar to try again.</source>
+          <target state="signed-off">無法取得地理位置；請檢查<bpt id="1">&lt;br &gt;</bpt><ept id="1">&lt;/br&gt;</ept>權限然後使用應用程式列再試一次。</target>
+        </trans-unit>
+        <trans-unit id="resources\foldername" translate="no" xml:space="preserve">
+          <source>HereMyAm</source>
+          <target state="signed-off">HereMyAm</target>
+        </trans-unit>
+        <trans-unit id="resources\geoloc_attempt" translate="yes" xml:space="preserve">
+          <source>Attempting to obtain geolocation...</source>
+          <target state="signed-off">嘗試進行定位...</target>
+        </trans-unit>
+        <trans-unit id="resources\heading_location" translate="yes" xml:space="preserve">
+          <source>Location</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">位置</target>
+        </trans-unit>
+        <trans-unit id="resources\heading_photo" translate="yes" xml:space="preserve">
+          <source>Photo</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">照片</target>
+        </trans-unit>
+        <trans-unit id="resources\help1" translate="yes" xml:space="preserve">
+          <source>Here My Am! helps you announce yourself to the world!</source>
+          <target state="signed-off">Here My Am! 幫您向全世界介紹自己!</target>
+        </trans-unit>
+        <trans-unit id="resources\help2" translate="yes" xml:space="preserve">
+          <source>Begin by tapping on the image area on the left side to take a photo with your device's camera, or load one directly using the app bar commands.</source>
+          <target state="signed-off">先按一下圖片區域的左邊來使用裝置的攝影機拍照，或從應用程式列的功能中直接載入圖片。</target>
+        </trans-unit>
+        <trans-unit id="resources\help3" translate="yes" xml:space="preserve">
+          <source>Your location will be set automatically if you allow the app to use Location services. Once located, you can also drag the pushpin on the map to adjust your location if desired.</source>
+          <target state="signed-off">如果您允許應用程式使用定位服務，將會自動設置您的位置。定位後，您可以在地圖上拖動圖釘調整您的位置。</target>
+        </trans-unit>
+        <trans-unit id="resources\help4" translate="yes" xml:space="preserve">
+          <source>If the app cannot access your location, use the Permissions settings to allow it, then use the Refresh Location command on the app bar.</source>
+          <target state="signed-off">如果應用程式無法取得您的位置，請使用權限設定來核准，然後使用應用程式列上的更新定位的功能。</target>
+        </trans-unit>
+        <trans-unit id="resources\help5" translate="yes" xml:space="preserve">
+          <source>Once you have a picture and a location, invoke the Share charm to select an app through which you can share the image and your coordinates.</source>
+          <target state="signed-off">一旦您有相片及定位，叫用常用工具列的分享功能，可以選取想要傳送照片及座標的目標程式。</target>
+        </trans-unit>
+        <trans-unit id="resources\help_command" translate="yes" xml:space="preserve">
+          <source>Help</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">説明</target>
+        </trans-unit>
+        <trans-unit id="resources\location_errorImage" translate="yes" xml:space="preserve">
+          <source>Could not create the map. Tap to try again.</source>
+          <target state="signed-off">無法建立地圖，請按一下再試一次。</target>
+        </trans-unit>
+        <trans-unit id="resources\location_errorImage1" translate="yes" xml:space="preserve">
+          <source>Could not create the map</source>
+          <target state="signed-off">無法建立地圖，</target>
+        </trans-unit>
+        <trans-unit id="resources\location_errorImage2" translate="yes" xml:space="preserve">
+          <source>Tap to try again</source>
+          <target state="signed-off">請按一下再試一次。</target>
+        </trans-unit>
+        <trans-unit id="resources\location_formatLong" translate="yes" xml:space="preserve">
+          <source>At latitude %s, longitude %s</source>
+          <target state="signed-off">在緯度 %s、經度 %s</target>
+        </trans-unit>
+        <trans-unit id="resources\location_formatShort" translate="yes" xml:space="preserve">
+          <source>At (%s, %s)</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">在 （%s，%s)</target>
+        </trans-unit>
+        <trans-unit id="resources\package_displayname" translate="no" xml:space="preserve">
+          <source>Here My Am! (17)</source>
+          <target state="signed-off">Here My Am! (17)</target>
+        </trans-unit>
+        <trans-unit id="resources\photo_alt" translate="yes" xml:space="preserve">
+          <source>Tap to capture image from camera</source>
+          <target state="signed-off">按一下從攝影機拍照</target>
+        </trans-unit>
+        <trans-unit id="resources\photo_line1" translate="yes" xml:space="preserve">
+          <source>Tap to capture image from camera</source>
+          <target state="signed-off">按一下來拍照</target>
+        </trans-unit>
+        <trans-unit id="resources\photo_line2" translate="yes" xml:space="preserve">
+          <source>~</source>
+          <target state="signed-off">~</target>
+        </trans-unit>
+        <trans-unit id="resources\privacy1" translate="yes" xml:space="preserve">
+          <source>Here My Am! will attempt to access your location if you allow it, and will also use your webcam to take a picture, if you also allow it.</source>
+          <target state="signed-off">在您的允許下，Here My Am! 會試圖為您定位，也在您的允許下使用網路攝影機照相。</target>
+        </trans-unit>
+        <trans-unit id="resources\privacy2" translate="yes" xml:space="preserve">
+          <source>Pictures are automatically stored in your Pictures Library in a HereMyAm folder. Your location may be saved in the app's private app data for the purpose of restarting the app if it's suspended and terminated.</source>
+          <target state="signed-off">照片會自動存在您的圖片媒體櫃裡的 HereMyAm 資料夾，您的訂位資料會存在 HereMyAm 的應用程式資料中，作為從休眠或關機回復後重新佈建您的應用程式。</target>
+        </trans-unit>
+        <trans-unit id="resources\privacy3" translate="yes" xml:space="preserve">
+          <source>Neither pictures nor your location are transmitted elsewhere unless you explicitly invoke the Share charm and choose to share these details with a target app.</source>
+          <target state="signed-off">除非您特別叫用常用工具列裡的分享功能，將資料細節傳給別的應用程式，不然您的定位跟照片都不會傳到別的地方去。</target>
+        </trans-unit>
+        <trans-unit id="resources\privacy4" translate="yes" xml:space="preserve">
+          <source>No other personal information is collected, stored, or shared.</source>
+          <target state="signed-off">不會收集、儲存或分享其他個人資訊。</target>
+        </trans-unit>
+        <trans-unit id="resources\privacy5" translate="yes" xml:space="preserve">
+          <source>And don't quote me on how legally binding all of this is...it's just a sample!</source>
+          <target state="signed-off">還有請不要批評我呈現這些資料的適切性... 這只是範例程式而已啊!</target>
+        </trans-unit>
+        <trans-unit id="resources\privacy_URI" translate="yes" xml:space="preserve">
+          <source>http://www.kraigbrockschmidt.com/src/HereMyAm_PrivacyStatement.html</source>
+          <target state="signed-off">http://www.kraigbrockschmidt.com/src/privacy/HereMyAm_zh-Hant.html</target>
+        </trans-unit>
+        <trans-unit id="resources\privacy_command" translate="yes" xml:space="preserve">
+          <source>Privacy Statement</source>
+          <target state="signed-off" state-qualifier="mt-suggestion">隱私權聲明</target>
+        </trans-unit>
+        <trans-unit id="resources\share_title" translate="no" xml:space="preserve">
+          <source>Here My Am!</source>
+          <target state="signed-off">Here My Am!</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

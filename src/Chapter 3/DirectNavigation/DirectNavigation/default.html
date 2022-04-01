@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>DirectNavigation</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet">
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- ApplicationNav references -->
+    <link href="/css/default.css" rel="stylesheet">
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <h2>You are on the home page (default.html) in the local context</h2>
+    <iframe src="/frame-local.html"></iframe>
+
+    <h2>Bing page below is in a web context</h2>
+    <iframe src="http://www.bing.com" style="width:600px; height: 400px"></iframe>
+</body>
+</html>

@@ -1,0 +1,48 @@
+﻿body {
+    height: calc(100% - 20px);
+    width: calc(100% - 20px);
+    padding: 10px;
+    display: -ms-grid;
+    -ms-grid-rows: auto 1fr;
+    -ms-grid-columns: auto 1fr;
+}
+
+#header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;   
+}
+
+#divElement {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    margin-right: 10px;
+}
+
+#divOut {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    
+	background-color: gray;
+	display: -ms-grid;
+	-ms-grid-rows:auto 1fr;
+	-ms-grid-columns: 1fr;
+}
+
+#logContainer {
+	-ms-grid-row: 2;
+	overflow-y: scroll;
+    height: 100%;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}
