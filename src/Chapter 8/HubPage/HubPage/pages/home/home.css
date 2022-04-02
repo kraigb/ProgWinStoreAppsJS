@@ -1,0 +1,69 @@
+﻿.homepage section[role=main] {    
+    overflow-x: auto;      
+    -ms-scroll-snap-type: mandatory;
+    /* Snap points must occur on a pannable element. The values here reflect the positions
+       of each hub section (590px, half for section 2) plus the 120px left border so they 
+       align to the header text. So the snap points are:
+           Leftmost (Start of section 1 is at 120px): 0px
+           Section 2: 670px (120px + 590px)
+           Section 3: 1045px (670 + 590/2 + 80 gap)
+           Section 4: 1715px (1045 + 590 + 80)
+           Section 5: 2385 (1715 + 590 + 80)
+           Rightmost endpoint: 3055 (2385 + 590 + 80)
+
+        Note that without the last snap point, you aren't able to pan all the way to the
+        end of the div in narrow views. Also, if you support the < 500px views and adjust
+        the header size and margin, you'll need to change the snap points within the
+        appropriate media query.
+       */    
+    -ms-scroll-snap-points-x: snapList(0px, 670px, 1045px, 1715px, 2385px, 3055px);
+}
+
+.homepage .hubSections {    	
+    width: 3176px; /* Adding one for the rightmost border */
+	height: 100%;
+	display: -ms-grid;
+	-ms-grid-rows: 1fr;
+	-ms-grid-columns: 120px 2fr 80px 1fr 80px 2fr 80px 2fr 80px 2fr 80px;
+}
+
+.homepage .hubSection1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2; 
+    width: 100%;
+    height: calc(100% - 2px);
+	border: solid 1px green;    
+}
+
+.homepage .hubSection2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    width: 100%;
+    height: calc(100% - 2px);
+	border: solid 1px yellow;    
+}
+
+.homepage .hubSection3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    width: 100%;
+    height: calc(100% - 2px);
+	border: solid 1px white;    
+}
+
+.homepage .hubSection4 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 8;
+    width: 100%;
+    height: calc(100% - 2px);
+	border: solid 1px blue;    
+}
+
+.homepage .hubSection5 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 10;
+    width: 100%;
+    height: calc(100% - 2px);
+	border: solid 1px red;
+}
+

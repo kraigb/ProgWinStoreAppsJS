@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="/js/scenario6.js"></script>
+</head>
+<body>
+    <div data-win-control="App.ScenarioInput">
+        <p>Demonstrates chaining multiple async operations (instead of nesting them), by having the promise.then method return a promise, namely itself.</p>        
+        <p><button id="btnRun1">Run scenario (condensed chain, quiet)</button></p>
+        <p><button id="btnRun2">Run scenario (expanded chain, noisy)</button></p>
+    </div>
+    <div data-win-control="App.ScenarioOutput">
+        <!-- Output is generated through the logger -->
+    </div>
+</body>
+</html>

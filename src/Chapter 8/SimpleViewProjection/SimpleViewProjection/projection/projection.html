@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Projection Page</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <link href="projection.css" rel="stylesheet" />
+    <script src="projection.js"></script>
+</head>
+<body>
+    <div id="projectionContent">
+        <h1>Projection Page</h1>
+        <p>This is the projected view, using the dark theme for differentiation. Use the button below to send a message to the primary view.</p>
+        <p><button id="btnSendToPrimary">Send Message</button></p>
+        <p></p>
+        <p>The Close button will close this view and will inform the primary view via postMessage so it can reset its UI.</p>
+        <p><button id="btnClose">Close</button></p>
+        <h2>Messages from primary view:</h2>
+        <p>Message #<span id="messageCount">(n/a)</span>: <span id="messageOutput">(no messages)</span></p>
+    </div>             
+</body>
+</html>

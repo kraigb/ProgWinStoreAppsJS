@@ -1,0 +1,32 @@
+﻿<!--
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Copyright (c) Microsoft Corporation. All rights reserved
+-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/css/scenario4.css" />
+    <script src="/js/scenario4.js"></script>
+</head>
+<body>
+    <div data-win-control="SdkSample.ScenarioInput">
+        <p>This sample demonstrates how a developer can use resource management to display visuals appropriate for the contrast settings of the system.</p>
+        <p>The resource loader will automatically replace the image's source of <code>button.svg</code> to <code>button.contrast-*.svg</code> depending on the setting.</p>
+                <p>To handle dynamic changes, this scenario also uses a media query listener to refresh the img element when contrast changes occur.</p>
+    </div>
+    <div data-win-control="SdkSample.ScenarioOutput">
+        <div class="s4-grid">
+            <div class="s4-column-1">
+                <p>When a High Contrast theme is applied, a High Contrast asset is loaded instead of the original asset.</p>
+                <img id="buttonImage" src="../button.svg" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>

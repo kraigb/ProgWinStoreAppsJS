@@ -1,0 +1,53 @@
+﻿body {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 1fr;    
+}
+
+#mainContent {
+	display: -ms-grid;
+	-ms-grid-columns: 1fr;
+	-ms-grid-rows: 128px 1fr 60px;
+}
+
+#header {
+	-ms-grid-column: 1;
+	-ms-grid-row: 1;
+	display: -ms-grid;
+	-ms-grid-columns: 120px 1fr 40px;
+	-ms-grid-rows: 1fr;
+}
+
+.titlearea {
+	-ms-grid-column: 2;
+    -ms-grid-row: 1;
+	margin-top: 37px;
+}
+
+#sections {
+	-ms-grid-column: 1;
+	-ms-grid-row: 2;
+	display: -ms-grid;
+	-ms-grid-columns: 120px 1fr 20px 1fr 20px 1fr 20px 1fr 20px;
+	-ms-grid-rows: 1fr;
+}
+
+#loginDisplay1 {
+	-ms-grid-column: 2;
+	-ms-grid-row: 1;
+}
+
+#loginDisplay2{
+	-ms-grid-column: 4;
+	-ms-grid-row: 1;
+}
+
+#loginDisplay3{
+	-ms-grid-column: 6;
+	-ms-grid-row: 1;
+}
+
+#loginDisplay4{
+	-ms-grid-column: 8;
+	-ms-grid-row: 1;
+}

@@ -1,0 +1,95 @@
+﻿/*
+Copyright (c) Microsoft Corporation. All rights reserved
+*/
+
+/* styles */
+
+#flavorSelector
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#cartonDiv
+{
+    -ms-grid-row: 2;
+    margin-left: 10px;
+}
+    
+.scenario1Containers.win-container
+{
+    width:147px;
+    height:147px;
+    margin:10px;
+}
+
+.styledItem.win-container {
+    border: dotted 6px orange;
+    margin: 5px;
+}
+
+.styledItem .win-focusedoutline {
+	outline: black dashed 1px;    
+}
+
+
+.styledItem.win-itemcontainer:hover {
+	outline: rgba(0, 0, 255, 0.4) dotted 6px;
+}
+
+.styledItem.win-container.win-selectionstylefilled.win-selected .win-selectionborder {
+    background-color: rgba(0, 0, 255, .25);
+}
+
+.styledItem.win-container.win-selectionstylefilled .win-selectioncheckmark {	
+	color: blue;	
+}
+
+
+
+
+
+.styledItem2.win-container:not(.win-selectionstylefilled).win-selected .win-selectionborder {
+    border-color: yellow;
+}
+
+.styledItem2.win-container:not(.win-selectionstylefilled).win-selected .win-selectioncheckmarkbackground {
+    border-top-color: yellow;
+	border-right-color: yellow;
+    border-left-color: yellow;
+    border-bottom-color: yellow;
+	border-width: 25px;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.styledItem2.win-container:not(.win-selectionstylefilled) .win-selectioncheckmark {		    
+	font-size: 0px; /* Hide the default checkmark */
+    margin-right: 12px;
+    margin-top: 10px;
+}
+
+.styledItem2.win-container:not(.win-selectionstylefilled) .win-selectioncheckmark::before {	
+	content: '\E0A5';
+	font-size: 30px;		
+    color: red;    
+}
+
+.styledItem2.win-container:not(.win-selectionstylefilled).win-selected:hover .win-selectionborder,
+.styledItem2.win-container:not(.win-selectionstylefilled).win-selected:hover .win-selectioncheckmarkbackground {
+    border-color: rgba(255, 255, 0, 0.75);
+}
+
+
+
+.styledItem2.win-container:not(.win-selectionstylefilled) .win-selectionhint {
+	font-size: 0px; /* Hide the default checkmark */
+}
+
+.styledItem2.win-container:not(.win-selectionstylefilled) .win-selectionhint::before {	
+	content: '\E006';
+	font-size: 30px;		
+    color: rgba(255, 0, 0, 0.4);    
+}
+
+

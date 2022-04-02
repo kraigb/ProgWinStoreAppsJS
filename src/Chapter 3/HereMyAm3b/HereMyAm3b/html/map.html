@@ -4,7 +4,7 @@
         <title>Map</title>
         <script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
         
-        <script type="text/javascript">            
+        <script type="text/javascript">
             //Global variables here
             var map = null;
 
@@ -31,7 +31,7 @@
                 if (typeof target != 'function') {
                     throw "The function name does not resolve to an actual function";
                 }
-                
+
                 return target.apply(this, call.args);
             }
 
@@ -56,18 +56,18 @@
                 map = new Microsoft.Maps.Map(document.getElementById("mapDiv"), {
                     //NOTE: replace these credentials with your own obtained at
                     //http://msdn.microsoft.com/en-us/library/ff428642.aspx
-                    credentials: "AlHJ5gHTINN2iD7HxLJpHn0e_tZYvzUAOsfqd37Rhj1NJz37vhUuE5iBAYJsH-ul",
+                    credentials: "AhTTNOioICXvPRPUdr0_NAYWj64MuGK2msfRendz_fL9B1U6LGDymy2OhbGj7vhA",
                     //zoom: 12,
                     mapTypeId: Microsoft.Maps.MapTypeId.road
                 });
             }
-            
+
             function pinLocation(lat, long) {
                 if (map === null) {
                     throw "No map has been created";
                 }
 
-                var location = new Microsoft.Maps.Location(lat, long);                
+                var location = new Microsoft.Maps.Location(lat, long);
                 var pushpin = new Microsoft.Maps.Pushpin(location, { draggable: true });
 
                 Microsoft.Maps.Events.addHandler(pushpin, "dragend", function (e) {
@@ -76,7 +76,7 @@
                 });
 
                 map.entities.push(pushpin);
-                map.setView({ center: location, zoom: 12, });                                
+                map.setView({ center: location, zoom: 12, });
                 return;
             }
 

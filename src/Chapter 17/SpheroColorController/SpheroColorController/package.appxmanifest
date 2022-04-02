@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="ProgrammingWin-JS-CH17-SpheroColorController" Version="2.0.0.0" Publisher="CN=kraigb" />
+  <Properties>
+    <DisplayName>Sphero Color Controller (17)</DisplayName>
+    <PublisherDisplayName>kraigb</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <m2:VisualElements DisplayName="Sphero Color Controller (17)" Description="Uses the Windows.Devices.Bluetooth.RfcommDeviceService API to send commands to the Sphero device to change its color." ForegroundText="light" BackgroundColor="#003765" Square150x150Logo="images\logo.png" Square30x30Logo="images\SmallLogo.png">
+        <m2:DefaultTile>
+          <m2:ShowNameOnTiles>
+            <m2:ShowOn Tile="square150x150Logo" />
+          </m2:ShowNameOnTiles>
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="images\splashscreen.png" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />    
+    <m2:DeviceCapability Name="bluetooth.rfcomm">
+      <m2:Device Id="any">
+        <m2:Function Type="name:serialPort" />
+        <!-- Same as <m2:Function Type="serviceId:00001101-0000-1000-8000-00805F9B34FB" /> -->
+      </m2:Device>
+    </m2:DeviceCapability>
+  </Capabilities>
+</Package>

@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Calendar Control Demo</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-light.css" rel="stylesheet">
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <!-- CalendarControl references -->
+    <link href="/css/default.css" rel="stylesheet">
+    <link href="/controls/calendar/calendar.css" rel="stylesheet">
+    <script src="/controls/calendar/calendar.js"></script>
+    <script src="/js/default.js"></script>
+</head>
+
+<body>
+    <div id="mainContent">
+        <header id="header" aria-label="Header content" role="banner">
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Custom Calendar Control Demo</span>
+            </h1>
+        </header>
+
+        <section id="section" aria-label="Main content" role="main">
+            <!-- This calendar declared in markup -->
+            <div id="calendar1" class="control-calendar" aria-label="Calendar 1"
+                data-win-control="Controls.Calendar"
+                data-win-options="{ year: 2013, month: 7, ondateselected: CalendarDemo.dateselected}">
+            </div>
+
+            <!-- This calendar will be created in code -->
+            <div id="calendar2Container">
+                <div id="calendar2" class="control-calendar" aria-label="Calendar 2">
+                </div>
+                <br />
+                <button id="btnDispose">Dispose</button>
+            </div>
+
+            <p id="message"></p>
+            
+        </section>
+    </div>
+</body>
+</html>
+
+

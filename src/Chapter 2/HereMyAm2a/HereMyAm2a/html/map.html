@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Map</title>
+        <script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+        
+        <script type="text/javascript">
+            //Global variables here
+            var map = null;
+
+            document.addEventListener("DOMContentLoaded", init);
+            window.addEventListener("message", processMessage);
+
+            //Function to turn a string in the syntax { functionName: ..., args: [...] }
+            //into a call to the named function with those arguments. This constitutes a generic 
+            //dispatcher that allows code in an iframe to be called through postMessage.
+            function processMessage(msg) {
+                //Verify data and origin (in this case the local context of the app)
+                if (!msg.data || msg.origin !== "ms-appx://" + document.location.host) {
+                    return;
+                }
+
+                var call = JSON.parse(msg.data);
+
+                if (!call.functionName) {
+                    throw "Message does not contain a valid function name.";
+                }
+
+                var target = this[call.functionName];
+
+                if (typeof target != 'function') {
+                    throw "The function name does not resolve to an actual function";
+                }
+
+                return target.apply(this, call.args);
+            }
+
+
+            //Create the map (though the namespace won't be defined without connectivity)
+            function init() {
+                if (typeof Microsoft == "undefined") {
+                    return;
+                }
+
+                map = new Microsoft.Maps.Map(document.getElementById("mapDiv"), {
+                    //NOTE: replace these credentials with your own obtained at
+                    //http://msdn.microsoft.com/en-us/library/ff428642.aspx
+                    credentials: "AhTTNOioICXvPRPUdr0_NAYWj64MuGK2msfRendz_fL9B1U6LGDymy2OhbGj7vhA",
+                    //zoom: 12,
+                    mapTypeId: Microsoft.Maps.MapTypeId.road
+                });
+            }
+
+            function pinLocation(lat, long) {
+                if (map === null) {
+                    throw "No map has been created";
+                }
+
+                var location = new Microsoft.Maps.Location(lat, long);
+                var pushpin = new Microsoft.Maps.Pushpin(location, {});
+                map.entities.push(pushpin);
+                map.setView({ center: location, zoom: 12, });
+                return;
+            }
+
+            function setZoom(zoom) {
+                if (map === null) {
+                    throw "No map has been created";
+                }
+
+                map.setView({ zoom: zoom });
+            }
+        </script>
+    </head>
+    <body>
+        <div id="mapDiv"></div>
+    </body>
+</html>

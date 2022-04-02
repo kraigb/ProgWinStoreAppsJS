@@ -1,0 +1,45 @@
+﻿.listView_s4 {
+    width: 100%;
+    height: calc(100% - 20px);
+}
+
+/* Set the layout model for the ListView */
+.listView_s4 .verticalGrid_Flex .win-itemscontainer {
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+    -ms-flex-direction: row;
+    -ms-flex-wrap: wrap;
+}
+
+/* Tighten the default margins on the ListView's per-item container */
+.listView_s4 .verticalGrid_Flex .win-container {
+    margin: 2px;
+}
+
+
+/* Template for the items in the ListViews in this sample */
+/* Small items */
+.smallListIconTextItem_s4 {
+    width: 60px;
+    height: 60px;
+    padding: 0px;
+    overflow: hidden;
+    display: -ms-grid;   
+}
+
+    .smallListIconTextItem_s4 img.smallListIconTextItem-Image {
+        width: 60px;
+        height: 60px;
+        margin: 0px;
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+    }
+
+    .smallListIconTextItem_s4 span.smallListIconTextItem-Text {
+        width: 60px;
+        height: 20px;
+        margin: 0px;
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+    }

@@ -1,0 +1,36 @@
+﻿@{
+  //
+  // This is where any other code would be placed to acquire the dynamic content
+  // needed for the tile update. In this case we'll just return static XML to show
+  // the structure of the service itself.
+  // 
+}<?xml version="1.0" encoding="utf-8" ?>
+<tile>
+    <visual version ="2" lang="en-US">
+        <binding template="TileSquare150x150PeekImageAndText02" branding="none"
+            fallback="TileSquarePeekImageAndText02" contentId="2">
+            <image id="1" src="http://www.kraigbrockschmidt.com/images/Liam13b.jpg"/>
+            <text id="1">Little hiker</text>
+            <text id="2">It was colder in February</text>
+        </binding>
+        <binding template="TileWide310x150SmallImageAndText04" branding="none"
+            fallback="TileWideSmallImageAndText04" contentId="2" >
+            <image id="1" src="http://www.kraigbrockschmidt.com/images/Liam13c.jpg"/>
+            <text id="1">Big smiles</text>
+            <text id="2">Because we're at LegoLand</text>
+        </binding>
+@* Always put the large tile at the end for compatibility with Windows 8 systems *@
+          <binding template="TileSquare310x310SmallImagesAndTextList03" branding="none"
+              contentId="1">
+            <image id="1" src="http://www.kraigbrockschmidt.com/images/Liam07.png"/>
+            <text id="1">Liam--</text>
+            <text id="2">Giddy on the day he learned to sit up!</text>
+            <image id="2" src="http://www.kraigbrockschmidt.com/images/Liam08.png"/>
+            <text id="3">This is Liam</text>
+            <text id="4">Exploring the great outdoors!</text>
+            <image id="3" src="http://www.kraigbrockschmidt.com/images/Liam13a.jpg"/>
+            <text id="5">Still Liam</text>
+            <text id="6">He's older now, almost 7</text>
+        </binding>
+    </visual>
+</tile>

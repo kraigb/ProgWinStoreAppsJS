@@ -1,0 +1,65 @@
+﻿<!--
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Copyright (c) Microsoft Corporation. All rights reserved
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/css/4_RenderValue.css" />
+    <script src="/js/4_RenderValue.js"></script>
+</head>
+<body>
+    <div data-win-control="SdkSample.ScenarioInput">
+        <p>
+            This is the same as scenarios 2 and 3 but uses the static WinJS.Binding.Template.render method instead
+            of an instantiated control.
+        </p>
+        <fieldset id="templateControlObject">
+            <legend>Object to edit</legend>
+            <select id="templateControlObjectSelector">
+                <option value="0">Object 1</option>
+                <option value="1">Object 2</option>
+                <option value="2">Object 3</option>
+            </select>
+        </fieldset>
+        <fieldset id="templateControlInputText">
+            <legend>Text</legend>
+            <input type="text" id="templateControlInputTextInput" />
+        </fieldset>
+        <fieldset id="templateControlInputColor">
+            <legend>Color</legend>
+            <ol>
+                <li>
+                    <label for="templateControlInputRed">
+                        Red:
+                    </label>
+                    <input type="text" id="templateControlInputRed" />
+                </li>
+                <li>
+                    <label for="templateControlInputGreen">
+                        Green:
+                    </label>
+                    <input type="text" id="templateControlInputGreen" />
+                </li>
+                <li>
+                    <label for="templateControlInputBlue">
+                        Blue:
+                    </label>
+                    <input type="text" id="templateControlInputBlue" />
+                </li>
+            </ol>
+        </fieldset>
+
+        <!-- The template need not be declared at all as we'll be rendering it directly with render.value -->
+    </div>
+    <div data-win-control="SdkSample.ScenarioOutput">
+        <div id="templateControlRenderTarget">
+        </div>
+    </div>
+</body>
+</html>

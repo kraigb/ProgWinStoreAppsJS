@@ -1,0 +1,16 @@
+﻿body {
+}
+
+#mainContent {
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+button {
+    margin-right: 8px;
+}
+
+#colorBlock {
+    width: 150px;
+    height: 50px;
+}

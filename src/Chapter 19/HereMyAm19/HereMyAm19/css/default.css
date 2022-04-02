@@ -1,0 +1,30 @@
+﻿body {
+	display: -ms-grid;
+	-ms-grid-columns: 1fr;
+	-ms-grid-rows: 1fr;	
+}
+
+/* Heading background color reflects app's personality */
+.settings .win-header {
+    background-color:#00B294;
+    color: white;    
+}
+
+.settings {
+    /* Recommended that the flyout border is 20% darker than the header */
+    border-color: #008C72;
+}
+
+.settingsNarrow {
+    width: 346px;    
+}
+
+.settingsWide {
+    width: 646px;    
+}
+
+
+#privacyWebview {    
+    width: 566px; /* Default padding from win-content is 40px left/right, and 33px top*/
+    height: 600px;    
+}

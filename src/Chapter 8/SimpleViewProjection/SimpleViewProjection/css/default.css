@@ -1,0 +1,12 @@
+﻿body {
+}
+
+#mainContent {
+    margin: 40px;
+}
+
+button {
+    width: 70px;
+    height: 24px;
+    margin: 20px 10px 0px 10px;
+}

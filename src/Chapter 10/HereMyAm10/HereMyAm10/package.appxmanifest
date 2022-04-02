@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="ProgrammingWin-JS-CH10-HereMyAm10" Version="2.0.0.0" Publisher="CN=kraigb" />
+  <Properties>
+    <DisplayName>Here My Am! (10)</DisplayName>
+    <PublisherDisplayName>Kraig Brockschmidt</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <m2:VisualElements DisplayName="Here My Am! (10)" Description="Here My Am! (10) improves upon Here My Am! (9) by incorporating the Bing Maps SDK (eliminating the error condition when the script cannot be acquired), copies pictures to the Pictures library rather than appdata, adds an appbar command to select a picture using the file picker, adds another command to choose from recent photos, and adds a Settings panel." BackgroundColor="#00B294" ForegroundText="light" Square150x150Logo="images\tile.png" Square30x30Logo="images\smalllogo.png">
+        <m2:DefaultTile Wide310x150Logo="images\widetile.png" Square310x310Logo="images\largetile.png" Square70x70Logo="images\smalltile.png">
+          <m2:ShowNameOnTiles>
+            <m2:ShowOn Tile="square150x150Logo" />
+            <m2:ShowOn Tile="wide310x150Logo" />
+            <m2:ShowOn Tile="square310x310Logo" />
+          </m2:ShowNameOnTiles>
+        </m2:DefaultTile>
+        <m2:SplashScreen BackgroundColor="#00B294" Image="images\splashscreen.png" />
+        <m2:ApplicationView MinWidth="width320" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="picturesLibrary" />
+    <Capability Name="internetClient" />
+    <DeviceCapability Name="location" />
+    <DeviceCapability Name="webcam" />
+  </Capabilities>
+</Package>

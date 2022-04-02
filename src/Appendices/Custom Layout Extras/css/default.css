@@ -1,0 +1,20 @@
+﻿/* styles */
+
+/* Styles used for the custom layout */
+.listView .statusLayout {
+    position: static;
+}
+
+
+    .listView .statusLayout .win-container {
+        width: 250px;
+        margin-top: 10px;
+    }
+
+    .listView .statusLayout .win-item {
+        width: 250px;
+        height: 100%;
+        background-color: #eee;
+    }
+
+

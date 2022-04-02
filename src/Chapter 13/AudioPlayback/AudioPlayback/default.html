@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>AudioPlayback</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <!-- AudioPlayback references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <h1>Audio Playback</h1>
+    <p>Audio is playing from http://www.kraigbrockschmidt.com/mp3/WhoIsSylvia_PortlandOR_5-06.mp3</p>
+    <p id="audioInsertion"></p>
+    <button id="btnSound">Play Sound</button>
+
+    <br /><br />
+    <p>This button will pause the audio track above.</p>
+    <button id="btnSegments">Start Segment Playback</button>
+    <p><audio id="audioSegments" controls msAudioCategory="BackgroundCapableMedia"></audio></p>
+</body>
+
+</html>

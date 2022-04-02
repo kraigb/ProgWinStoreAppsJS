@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/css/scenario2.css" />
+    <script src="/js/scenario2.js"></script>
+</head>
+<body>
+    <div data-win-control="SdkSample.ScenarioInput">
+        <p>
+            Demonstrates the use of the webview's captureSelectedContentToDataPackageAsync method. Select some content in the left-hand webview,
+            then click the Capture selection to copy and render that selection into the right-hand webview.
+        </p>
+        <button id="btnCapture">Capture selection</button>
+    </div>
+    <div id="output" data-win-control="SdkSample.ScenarioOutput">
+        <x-ms-webview id="webviewSource"></x-ms-webview>
+        <x-ms-webview id="webviewOutput"></x-ms-webview>
+    </div>
+</body>
+</html>

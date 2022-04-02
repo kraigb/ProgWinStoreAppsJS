@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>CircusCannon</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+    
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <div id="mainContent">
+        <h1>Circus Cannon</h1>
+        <p>
+            <button id="btnAcquire">Acquire Device</button>
+            <button id="btnDisconnect">Disconnect</button>
+        </p>
+        <p>
+            <button id="btnLeft">Left</button>
+            <button id="btnRight">Right</button>
+            <button id="btnUp">Up</button>
+            <button id="btnDown">Down</button>
+        </p>
+        <p>
+            <button id="btnLeftSlow">Left Slow</button>
+            <button id="btnRightSlow">Right Slow</button>
+            <button id="btnUpSlow">Up Slow</button>
+            <button id="btnDownSlow">Down Slow</button>
+        </p>
+
+        <p>
+            <button id="btnStop">Stop</button>
+            <button id="btnFire">Fire</button>
+        </p>
+        <p id="txtOutput"></p>
+        <p id="txtReport">
+            Id: <span id="output_id"></span><br />
+            Size: <span id="output_size"></span><br />
+            Report: <span id="output_rawReport"></span><br />
+        </p>
+    </div>
+</body>
+</html>

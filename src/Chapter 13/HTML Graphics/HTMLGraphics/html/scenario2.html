@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/css/scenario2.css" />
+    <script src="/js/scenario2.js"></script>
+</head>
+<body>
+    <div data-win-control="SdkSample.ScenarioInput">
+        <p>Demonstrates applying styles to HTML graphic elements and how that styling doesn't affect element contents in any way.</p>
+        <input type="checkbox" id="check1" /><span>Apply styles</span>        
+    </div>
+    <div id="output" data-win-control="SdkSample.ScenarioOutput" >
+        <div id="imageElement">
+            <p class="win-type-x-large">Img element:</p>            
+            <img id="image1" src="/images/basic.png" style="z-index:2"/>
+        </div>
+
+        <div id="canvasElement">
+            <p class="win-type-x-large">Canvas element:</p>
+            <canvas id="canvas1"></canvas>
+        </div>
+
+        <div id="svgElement">
+            <p class="win-type-x-large">SVG:</p>
+            
+            <!--
+                You can use an inline SVG as commented below, but it's often convenient to keep SVGs in
+                separate files, such as /html/graphic.svg in this project. You can then use WinJS.xhr to
+                load the file contents and inject into a placeholder div as shown here. See scenario2.js.
+            -->
+            <div id="svgPlaceholder"></div>
+            <!--<svg width="350" height="200" style="z-index:1">
+                <rect id="r" x="0" y="0" width="350" height="200" stroke="#A20" fill="#ACF" stroke-width="2"></rect>
+                <line id="l" x1="70" y1="70" x2="180" y2="30" stroke="#A3A" stroke-width="3"></line>
+                <circle id="c" cx="240" cy="80" r="40" fill="#FE4" stroke="#F83" stroke-width="3"></circle>
+                <text id="t" x="20" y="180" font-family="Arial" font-style="italic" font-size="60" fill="#FFF">Press Start</text>
+            </svg>-->
+        </div>
+    </div>
+</body>
+</html>

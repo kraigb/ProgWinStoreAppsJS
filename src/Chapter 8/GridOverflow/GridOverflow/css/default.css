@@ -1,0 +1,20 @@
+﻿html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#divMain {
+    height: 50vh;
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+}
+
+#divTable {
+    height: 50vh;
+}
+
+.divChild {
+    background: #bbb;
+    border: 1px solid blue;
+}

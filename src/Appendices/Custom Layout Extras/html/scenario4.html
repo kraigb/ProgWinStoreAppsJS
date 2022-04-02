@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/css/scenario4.css" />
+    <script src="/js/scenario4.js"></script>
+</head>
+<body>
+    <div data-win-control="SdkSample.ScenarioInput">
+        <p>This scenario is the same layout as scenario 3 (custom grid laying out in rows) with added support for keyboarding and drag and drop. It works with
+        single and multiple selections alike. The text id overlay is included to make it easier to see the effects of reordering.</p>
+    </div>
+    <div data-win-control="SdkSample.ScenarioOutput">
+        <div class="itemTemplate_s4 smallListIconTextTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
+            <div class="smallListIconTextItem_s4">                
+                <img src="#" class="smallListIconTextItem-Image" data-win-bind="src: picture" />
+                <!-- This <span> is for debugging to check reordering, and overlays the image -->
+                <span class="smallListIconTextItem-Text" data-win-bind="textContent: id"></span>
+            </div>
+        </div>
+        <div class="listView_s4" data-win-control="WinJS.UI.ListView"
+             data-win-options="{
+                itemDataSource: Data.list.dataSource,
+                itemTemplate: select('.itemTemplate_s4'),
+                itemsDraggable: true,
+                itemsReorderable: true,
+                layout: {type: CustomLayouts.VerticalGrid_Flex4, itemWidth: 65, itemHeight: 65}}">
+        </div>        
+    </div>
+</body>
+</html>

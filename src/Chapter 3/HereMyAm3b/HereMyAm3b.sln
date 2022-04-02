@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 11 Express for Windows 8
-Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "HereMyAm (3b)", "HereMyAm3b\HereMyAm (3b).jsproj", "{1FBE749A-9711-42DE-9EEC-952A2250EA20}"
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "HereMyAm (3b)", "HereMyAm3b\HereMyAm3b.jsproj", "{1FBE749A-9711-42DE-9EEC-952A2250EA20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

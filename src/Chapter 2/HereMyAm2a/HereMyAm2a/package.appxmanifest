@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="ProgrammingWin-JS-CH2-HereMyAm2a" Version="2.0.0.0" Publisher="CN=kraigb" />
+  <Properties>
+    <DisplayName>Here My Am! (2a)</DisplayName>
+    <PublisherDisplayName>Kraig Brockschmidt</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <m2:VisualElements DisplayName="Here My Am! (2a)" Description="Here My Am! demonstrates using the camera capture API, the geolocation API, local and web context content, using a Bing maps control in the web context, communicating between the contexts, and taking the picture and the location and sharing through the Share contract." BackgroundColor="#003765" ForegroundText="light" Square150x150Logo="images\logo.png" Square30x30Logo="images\smalllogo.png">
+        <m2:DefaultTile>
+          <m2:ShowNameOnTiles>
+            <m2:ShowOn Tile="square150x150Logo" />
+          </m2:ShowNameOnTiles>
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="images\splashscreen.png" />
+        <m2:ApplicationView MinWidth="width320" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <DeviceCapability Name="webcam" />
+    <DeviceCapability Name="location" />
+  </Capabilities>
+</Package>

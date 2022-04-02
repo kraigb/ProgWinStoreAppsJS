@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="de-DE" original="HereMyAm19_Multilingual.prilog.xml" tool-id="MultilingualAppToolkit" product-name="HereMyAm19" product-version="1.0.0.0" build-num="0">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="2.2.1212.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="resources">
+        <trans-unit id="resources\about1" translate="yes" xml:space="preserve">
+          <source>Here My Am!<bpt id="1">&lt;br &gt;</bpt><ept id="1">&lt;/br&gt;</ept>Version 2.0.0.0<bpt id="2">&lt;br &gt;</bpt><ept id="2">&lt;/br&gt;</ept></source>
+          <target state="needs-review-translation">Here My Am!<bpt id="1"> &lt;br&gt;</bpt><ept id="1"> &lt;/br&gt;</ept>Version 1.0.0.0 <bpt id="2"> &lt;br&gt;</bpt> <ept id="2"> &lt;/br&gt;</ept></target>
+        <note from="MultilingualBuild" annotates="source" priority="2">'Here My Am!' app title is not localized.</note><note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note></trans-unit>
+        <trans-unit id="resources\about2" translate="yes" xml:space="preserve">
+          <source>From <bpt id="1">&lt;em&gt;</bpt>Programming Windows Store Apps with HTML, CSS, and JavaScript, Second Edition<ept id="1">&lt;/em&gt;</ept><bpt id="2">&lt;br &gt;</bpt><ept id="2">&lt;/br&gt;</ept>by Kraig Brockschmidt<bpt id="3">&lt;br &gt;</bpt><ept id="3">&lt;/br&gt;</ept>kraigb@microsoft.com</source>
+          <target state="needs-review-translation">Aus <bpt id="1"> &lt;em&gt;</bpt> Programming Windows 8 Apps with HTML and JavaScript <ept id="1"> &lt;/em&gt;</ept> <bpt id="2"> &lt;br&gt;</bpt> <ept id="2"> &lt;/br&gt;</ept> von Kraig Brockschmidt <bpt id="3"> &lt;br&gt;</bpt> <ept id="3"> &lt;/br&gt;</ept> kraigb@microsoft.com</target>
+        <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note></trans-unit>
+        <trans-unit id="resources\about3" translate="yes" xml:space="preserve">
+          <source>A free eBook Published by Microsoft Press<bpt id="1">&lt;br &gt;</bpt><ept id="1">&lt;/br&gt;</ept><bpt id="2">&lt;a href='http://aka.ms/BrockschmidtBook2'&gt;</bpt>Download Here<ept id="2">&lt;/a&gt;</ept></source>
+          <target state="needs-review-translation">Ein kostenloses eBook veröffentlicht von Microsoft Press <bpt id="1"> &lt;br&gt;</bpt> <ept id="1"> &lt;/br&gt;</ept> <bpt id="2"> &lt;a href='http://go.microsoft.com/FWLink/?Linkid=269853 "&gt;</bpt> hier downloaden <ept id="2"> &lt;/a&gt;</ept></target>
+        <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note></trans-unit>
+        <trans-unit id="resources\about_command" translate="yes" xml:space="preserve">
+          <source>About</source>
+          <target state="signed-off">Info</target>
+        </trans-unit>
+        <trans-unit id="resources\app_description" translate="no" xml:space="preserve">
+          <source>Here My Am! (19) has been globalized (removing locale-specific assumptions) and localized into several languages by moving language-specific strings into resource files and providing localized images.</source>
+          <target state="needs-review-translation">Here My Am! (19) has been globalized (removing locale-specific assumptions) and localized into several languages by moving language-specific strings into resource files and providing localized images.</target>
+        <note from="MultilingualBuild" annotates="source" priority="2">For the manifest only; not translated.</note><note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note></trans-unit>
+        <trans-unit id="resources\app_title" translate="no" xml:space="preserve">
+          <source>Here My Am! (19)</source>
+          <target state="needs-review-translation">Here My Am! (19)</target>
+        <note from="MultilingualBuild" annotates="source" priority="2">Not translated: App title used for the app display name and main page heading</note><note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note></trans-unit>
+        <trans-unit id="resources\appbar_label1" translate="yes" xml:space="preserve">
+          <source>Load picture</source>
+          <target state="signed-off">Bild laden</target>
+        </trans-unit>
+        <trans-unit id="resources\appbar_label2" translate="yes" xml:space="preserve">
+          <source>Recent pictures</source>
+          <target state="signed-off">Aktuelle Bilder</target>
+        </trans-unit>
+        <trans-unit id="resources\appbar_label3" translate="yes" xml:space="preserve">
+          <source>Refresh location</source>
+          <target state="signed-off">Position aktualisieren</target>
+        </trans-unit>
+        <trans-unit id="resources\appbar_tooltip1" translate="yes" xml:space="preserve">
+          <source>Load a picture through the file picker</source>
+          <target state="signed-off">Bilds über die Dateiauswahl laden</target>
+        </trans-unit>
+        <trans-unit id="resources\appbar_tooltip2" translate="yes" xml:space="preserve">
+          <source>Browse recent pictures taken in the app</source>
+          <target state="signed-off">Durchsuchen Sie zuletzt in der App aufgenommene Bilder</target>
+        </trans-unit>
+        <trans-unit id="resources\appbar_tooltip3" translate="yes" xml:space="preserve">
+          <source>Refresh your location with current GPS coordinates</source>
+          <target state="signed-off">Position mit aktuellen GPS-Koordinaten aktualisieren</target>
+        </trans-unit>
+        <trans-unit id="resources\aria_about" translate="yes" xml:space="preserve">
+          <source>About</source>
+          <target state="signed-off">Info</target>
+        </trans-unit>
+        <trans-unit id="resources\aria_geolocflyout" translate="yes" xml:space="preserve">
+          <source>Trying geolocation</source>
+          <target state="signed-off">Standortbestimmung wird versucht</target>
+        </trans-unit>
+        <trans-unit id="resources\aria_header" translate="yes" xml:space="preserve">
+          <source>Header content</source>
+          <target state="signed-off">Kopfzeile</target>
+        </trans-unit>
+        <trans-unit id="resources\aria_help" translate="yes" xml:space="preserve">
+          <source>Help</source>
+          <target state="signed-off">Hilfe</target>
+        </trans-unit>
+        <trans-unit id="resources\aria_location" translate="yes" xml:space="preserve">
+          <source>Location section</source>
+          <target state="signed-off">Positionsbereich</target>
+        </trans-unit>
+        <trans-unit id="resources\aria_main" translate="yes" xml:space="preserve">
+          <source>Main content</source>
+          <target state="signed-off">Hauptinhalt</target>
+        </trans-unit>
+        <trans-unit id="resources\aria_photo" translate="yes" xml:space="preserve">
+          <source>Photo section</source>
+          <target state="signed-off">Fotobereich</target>
+        </trans-unit>
+        <trans-unit id="resources\aria_privacy" translate="yes" xml:space="preserve">
+          <source>Privacy</source>
+          <target state="signed-off">Datenschutz</target>
+        </trans-unit>
+        <trans-unit id="resources\error_obtaingeoloc" translate="yes" xml:space="preserve">
+          <source>Unable to obtain geolocation; check<bpt id="1">&lt;br &gt;</bpt><ept id="1">&lt;/br&gt;</ept>permissions and use the app bar to try again.</source>
+          <target state="signed-off">Die Position konnte nicht ermittelt werden; Überprüfen Sie die Berechtigung <bpt id="1"> &lt;br&gt;</bpt> <ept id="1"> &lt;/br&gt;</ept> und verwenden Sie die App-Leiste
+ um es noch einmal zu versuchen.</target>
+        <note from="MultilingualBuild" annotates="source" priority="2">Contents of error message overlay on the map</note></trans-unit>
+        <trans-unit id="resources\foldername" translate="yes" xml:space="preserve">
+          <source>HereMyAm</source>
+          <target state="signed-off">HereMyAm</target>
+        <note from="MultilingualBuild" annotates="source" priority="2">Not translated</note></trans-unit>
+        <trans-unit id="resources\geoloc_attempt" translate="yes" xml:space="preserve">
+          <source>Attempting to obtain geolocation...</source>
+          <target state="signed-off">Standortbestimmung wird gestartet...</target>
+        <note from="MultilingualBuild" annotates="source" priority="2">Flyout message when waiting for geolocation to return</note></trans-unit>
+        <trans-unit id="resources\heading_location" translate="yes" xml:space="preserve">
+          <source>Location</source>
+          <target state="signed-off">Position</target>
+        <note from="MultilingualBuild" annotates="source" priority="2">Heading above the map area</note></trans-unit>
+        <trans-unit id="resources\heading_photo" translate="yes" xml:space="preserve">
+          <source>Photo</source>
+          <target state="signed-off">Foto</target>
+        <note from="MultilingualBuild" annotates="source" priority="2">Heading above the picture area</note></trans-unit>
+        <trans-unit id="resources\help1" translate="yes" xml:space="preserve">
+          <source>Here My Am! helps you announce yourself to the world!</source>
+          <target state="signed-off">Here My Am! hilft Ihnen, sich der Welt mitzuteilen!</target>
+        <note from="MultilingualBuild" annotates="source" priority="2">'Here My Am!' app title is not translated</note></trans-unit>
+        <trans-unit id="resources\help2" translate="yes" xml:space="preserve">
+          <source>Begin by tapping on the image area on the left side to take a photo with your device's camera, or load one directly using the app bar commands.</source>
+          <target state="signed-off">Starten Sie, indem Sie auf den Fotobereich auf der linken Seite tippen um ein Foto mit der eingebauten Kamera aufzunehmen oder Laden Sie ein Bild direkt über die Befehle in der App-Leiste.</target>
+        </trans-unit>
+        <trans-unit id="resources\help3" translate="yes" xml:space="preserve">
+          <source>Your location will be set automatically if you allow the app to use Location services. Once located, you can also drag the pushpin on the map to adjust your location if desired.</source>
+          <target state="signed-off">Ihre Position wird automatisch festgelegt, wenn Sie der App den Zugriff auf die Position ermöglichen. Sobald die Position ermittelt wurde, können Sie auch den PIN auf der Karte verschieben, um Ihren Standort anzupassen.</target>
+        </trans-unit>
+        <trans-unit id="resources\help4" translate="yes" xml:space="preserve">
+          <source>If the app cannot access your location, use the Permissions settings to allow it, then use the Refresh Location command on the app bar.</source>
+          <target state="signed-off">Wenn die App nicht auf Ihre Position zugreifen kann, können Sie dies in den Einstellungen der Berechtigungen emöglichen.  Verwenden Sie dann den Befehl "Position aktualisieren" auf der App-Leiste.</target>
+        </trans-unit>
+        <trans-unit id="resources\help5" translate="yes" xml:space="preserve">
+          <source>Once you have a picture and a location, invoke the Share charm to select an app through which you can share the image and your coordinates.</source>
+          <target state="signed-off">Sobald Sie ein Bild und einen Ort haben, rufen Sie den Charm "Teilen" auf, um eine Anwendung auszuwählen, mit der Sie das Bild und Ihre Koordinaten teilen können.</target>
+        </trans-unit>
+        <trans-unit id="resources\help_command" translate="yes" xml:space="preserve">
+          <source>Help</source>
+          <target state="signed-off">Hilfe</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="resources\high_contrast_white" xml:space="preserve">
+          <source>High Contrast White</source>
+          <target state="translated">Kontrast Weiß</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="resources\high_contrast_white_comment" xml:space="preserve">
+          <source>String returned by accessibility APIs, must match the entry in PC Settings</source>
+          <target state="new">String returned by accessibility APIs, must match the entry in PC Settings</target>
+        </trans-unit>
+        <trans-unit id="resources\location_errorImage" translate="yes" xml:space="preserve">
+          <source>Could not create the map. Tap to try again.</source>
+          <target state="signed-off">Die Karte konnte nicht erstellt werden. Tippen Sie, um es noch einmal zu versuchen.</target>
+        <note from="MultilingualBuild" annotates="source" priority="2">Instructional text for error in the map area; break into 1 and 2 for word wrapping, use ~ in 2 if no text.</note></trans-unit>
+        <trans-unit id="resources\location_errorImage1" translate="yes" xml:space="preserve">
+          <source>Could not create the map</source>
+          <target state="signed-off">Die Karte konnte nicht erstellt werden.</target>
+        </trans-unit>
+        <trans-unit id="resources\location_errorImage2" translate="yes" xml:space="preserve">
+          <source>Tap to try again</source>
+          <target state="signed-off">Tippen Sie, um es noch einmal zu versuchen.</target>
+        </trans-unit>
+        <trans-unit id="resources\location_formatLong" translate="yes" xml:space="preserve">
+          <source>At latitude %s, longitude %s</source>
+          <target state="signed-off">Beim Breitengrad %s, Längengrad %s</target>
+        </trans-unit>
+        <trans-unit id="resources\location_formatShort" translate="yes" xml:space="preserve">
+          <source>At (%s, %s)</source>
+          <target state="signed-off">Bei (%s, %s)</target>
+        </trans-unit>
+        <trans-unit id="resources\package_displayname" translate="no" xml:space="preserve">
+          <source>Here My Am! (19)</source>
+          <target state="needs-review-translation">Here My Am! (19)</target>
+        <note from="MultilingualBuild" annotates="source" priority="2">Not translated; Used in the Windows Store; will typically match app_title</note><note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note></trans-unit>
+        <trans-unit id="resources\photo_alt" translate="yes" xml:space="preserve">
+          <source>Tap to capture photo</source>
+          <target state="needs-review-translation">Tippen Sie, um das Bild der Kamera aufzunehmen</target>
+        <note from="MultilingualBuild" annotates="source" priority="2">Instructional text for photo area; break long lines into line1 and line2 for display</note><note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note></trans-unit>
+        <trans-unit id="resources\photo_line1" translate="yes" xml:space="preserve">
+          <source>Tap to capture photo</source>
+          <target state="needs-review-translation">Tippen Sie, um das Bild</target>
+        <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note></trans-unit>
+        <trans-unit id="resources\photo_line2" translate="yes" xml:space="preserve">
+          <source>~</source>
+          <target state="signed-off">der Kamera aufzunehmen</target>
+        <note from="MultilingualBuild" annotates="source" priority="2">Use ~ in line2 if there is no text</note></trans-unit>
+        <trans-unit id="resources\privacy1" translate="yes" xml:space="preserve">
+          <source>Here My Am! will attempt to access your location if you allow it, and will also use your webcam to take a picture, if you also allow it.</source>
+          <target state="signed-off">Here My Am! wird auf Ihre Position zugreifen und zum Fotografieren Ihre Webcam verwenden, wenn Sie dies jeweils zulassen.</target>
+        <note from="MultilingualBuild" annotates="source" priority="2">'Here My Am!' app title is not translated</note></trans-unit>
+        <trans-unit translate="yes" id="resources\photo_tooSmall" xml:space="preserve">
+          <source>Widen the view to capture a photo.</source>
+          <target state="new">Widen the view to capture a photo.</target>
+          
+        <note from="MultilingualBuild" annotates="source" priority="2">Appears in place of the photo when camera capture cannot be used</note></trans-unit>
+        <trans-unit id="resources\privacy2" translate="yes" xml:space="preserve">
+          <source>Pictures are automatically stored in your Pictures Library in a HereMyAm folder. Your location may be saved in the app's private app data for the purpose of restarting the app if it's suspended and terminated.</source>
+          <target state="signed-off">Bilder werden automatisch in Ihrer Bildbibliothek in einem HereMyAm-Ordner gespeichert. Ihre Position kann im App-Datenspeicher gespeichert werden, um die App neu zu starten, falls sie beendet oder angehalten wurde.</target>
+        <note from="MultilingualBuild" annotates="source" priority="2">'HereMyAm' folder name is not translated</note></trans-unit>
+        <trans-unit id="resources\privacy3" translate="yes" xml:space="preserve">
+          <source>Neither pictures nor your location are transmitted elsewhere unless you explicitly invoke the Share charm and choose to share these details with a target app.</source>
+          <target state="signed-off">Weder Bilder noch Ihre Position werden an andere Stellen übertragen, ausser Sie rufen den Charm "Teilen" explizit auf und entscheiden sich, diese Informationen mit einer Ziel-App zu teilen.</target>
+        </trans-unit>
+        <trans-unit id="resources\privacy4" translate="yes" xml:space="preserve">
+          <source>No other personal information is collected, stored, or shared.</source>
+          <target state="signed-off">Keine weiteren persönlichen Informationen werden gesammelt, gespeichert oder weitergegeben.</target>
+        </trans-unit>
+        <trans-unit id="resources\privacy5" translate="yes" xml:space="preserve">
+          <source>And don't quote me on how legally binding all of this is...it's just a sample!</source>
+          <target state="signed-off">Und bitte keine Fragen, ob das Ganze rechtsverbindlich ist... Es ist ist nur ein Beispiel!</target>
+        </trans-unit>
+        <trans-unit id="resources\privacy_URI" translate="yes" xml:space="preserve">
+          <source>http://www.kraigbrockschmidt.com/src/HereMyAm_PrivacyStatement.html</source>
+          <target state="signed-off">http://www.kraigbrockschmidt.com/src/privacy/HereMyAm_de-DE.html</target>
+        </trans-unit>
+        <trans-unit id="resources\privacy_command" translate="yes" xml:space="preserve">
+          <source>Privacy Statement</source>
+          <target state="signed-off">Datenschutzerklärung</target>
+        </trans-unit>
+        <trans-unit id="resources\share_title" translate="no" xml:space="preserve">
+          <source>Here My Am!</source>
+          <target state="signed-off">Here My Am!</target>
+        <note from="MultilingualBuild" annotates="source" priority="2">Not translated</note></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

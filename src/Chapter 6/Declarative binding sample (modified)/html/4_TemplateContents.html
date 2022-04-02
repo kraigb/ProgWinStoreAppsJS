@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<body>
+    <!-- Bind both the background and the aria-label HTML attribute for the div -->
+    <div class="templateControlRenderedItem" 
+        data-win-bind="style.background: color TemplateControl.toCssColor;
+        this['aria-label']: text WinJS.Binding.setAttribute" role="article">
+        <ol>
+            <li data-win-bind="textContent: text"></li>
+            <li><span class="templateControlTemplateLabel">r: </span><span data-win-bind="textContent: color.r"></span></li>
+            <li><span class="templateControlTemplateLabel">g: </span><span data-win-bind="textContent: color.g"></span></li>
+            <li><span class="templateControlTemplateLabel">b: </span><span data-win-bind="textContent: color.b"></span></li>
+        </ol>
+    </div>
+</body>
+</html>
+
+
+
+

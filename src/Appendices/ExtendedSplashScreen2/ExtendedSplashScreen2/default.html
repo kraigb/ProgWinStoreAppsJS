@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ExtendedSplashScreen Chapter 8</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <!-- ExtendedSplashScreen references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+<div id="mainContent">
+    <h1>This is the real start page</h1>    
+    <p>Other content goes here.</p>
+</div>
+
+<!-- This div (declared last) will overlay the rest of the page initially; the elements within it will be
+        repositioned according to the default splash screen layout, then animated or shown. -->
+<div id="splashScreen">
+    <p><span id="counter"></span></p>    
+    <img id="logo" src="/images/splashscreen.png" />
+    <img id="title" src="/images/splashscreentitle.png" />
+    <progress id="progress" class="win-ring win-large"></progress>
+</div>
+</body>
+</html>

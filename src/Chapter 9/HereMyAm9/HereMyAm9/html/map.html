@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Map</title>
+        <script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+        
+        <script type="text/javascript">            
+            //Global variables here
+            var map = null;
+
+            //Default font size--the app will tell us what to use for our placeholder
+            var fontSize = 15;
+
+            document.addEventListener("DOMContentLoaded", init);
+
+            function notifyParent(event, args) {
+                if (typeof args == "undefined") {
+                    args = {};
+                }
+
+                //Add event name to the arguments object and raise the event
+                args["event"] = event;
+
+                //This function requires a string argument
+                window.external.notify(JSON.stringify(args));
+            }
+
+            //Create the map (though the namespace won't be defined without connectivity)
+            function init() {                
+                //If we don't have the Microsoft namespace, the script must have failed to load.
+                //In this case we'll set the img.onclick handler to attempt to reload the iframe.
+                //This way, if network connectivity happened to be restored, it should then work.
+                //You can test this by disconnecting from the network, uninstalling the app (to clear
+                //any cached map script), and running the app. It should hit this error case and show
+                //the error image. Then reconnect the network and click the image; the map should reload
+                //if it's able to get the script, otherwise it continues to come here.
+                if (typeof Microsoft == "undefined") {
+                    //Make sure the error is visible; we didn't want it to start off being visible.
+                    setPlaceholderImage();
+                    var errorImage = document.getElementById("errorImage")
+                    errorImage.style.display = "";
+                    
+                    errorImage.onclick = function () {
+                        document.location.reload(true);
+                    }
+
+                    return;
+                    }
+                
+                map = new Microsoft.Maps.Map(document.getElementById("mapDiv"), {
+                    //NOTE: replace these credentials with your own obtained at
+                    //http://msdn.microsoft.com/en-us/library/ff428642.aspx
+                    credentials: "AhTTNOioICXvPRPUdr0_NAYWj64MuGK2msfRendz_fL9B1U6LGDymy2OhbGj7vhA",
+                    //zoom: 12,
+                    mapTypeId: Microsoft.Maps.MapTypeId.road
+                });
+
+                if (map != null) {
+                    //We created the map, so make sure the error image is hidden
+                    document.getElementById("errorImage").style.display = "none";
+                }
+            }
+
+            function setPlaceholderFontSize(argsString) {
+                var args = JSON.parse(argsString);
+                fontSize = args.size;
+                setPlaceholderImage();
+            }
+
+            function pinLocation(argsString) {
+                var args = JSON.parse(argsString);
+                console.log("entering pinLocation, lat = " + args.lat + ", long = " + args.long);
+
+                if (map === null) {
+                    //We used to throw here, but now we have a way to handle the error with the image
+                    return;
+                }
+
+                console.log("getting variables");
+                var location = new Microsoft.Maps.Location(args.lat, args.long);
+                var pushpin = new Microsoft.Maps.Pushpin(location, { draggable: true });
+
+                Microsoft.Maps.Events.addHandler(pushpin, "dragend", function (e) {
+                    var location = e.entity.getLocation();
+                    notifyParent("locationChanged", { latitude: location.latitude, longitude: location.longitude });
+                });
+
+                console.log("added handler");
+
+                //Pop any previous pushpin, otherwise repeated calls will create new pins.
+                map.entities.pop();
+
+                //Add the new one
+                map.entities.push(pushpin);
+                console.log("pushpin added");
+                map.setView({ center: location, zoom: 12, });
+                console.log("returning");
+                return "success"; //Can return only string values; other types are ignored
+            }
+
+            function setZoom(zoom) {
+                if (map === null) {
+                    //We used to throw here, but now we have a way to handle the error with the image
+                }
+
+                map.setView({ zoom: zoom });
+            }
+
+            //We use the same placeholder strategy as we do in the app to avoid
+            //a fixed graphic. In later revisions we'll combine this code with the other
+            //method as we'll drop the webview.
+            function setPlaceholderImage() {
+                var errorImage = document.getElementById("errorImage");
+                var canvas = document.createElement("canvas");
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+
+                var ctx = canvas.getContext("2d");
+                ctx.fillStyle = "#7f7f7f";
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = "#ffffff";
+                
+                ctx.font = "normal " + fontSize + "px 'Arial'";
+                ctx.textAlign = "center";
+                ctx.fillText("Could not create the map.", canvas.width / 2, (canvas.height / 2) - (fontSize * .75));
+                ctx.fillText("Tap to try again.", canvas.width / 2, (canvas.height / 2) + (fontSize * .75));
+
+                //The blob should be released when the img.src is replaced
+                errorImage.src = URL.createObjectURL(canvas.msToBlob(), { oneTimeOnly: true });
+            }
+
+        </script>
+    </head>
+    <body style="overflow: hidden; background-color: #7f7f7f;">
+        <div id="mapDiv">
+            <!-- We'll show this element if we don't get the script loaded for the map -->
+            <img id="errorImage" style="display: none; width: 100%; height: 100%;" src="#" />
+        </div>
+    </body>
+</html>

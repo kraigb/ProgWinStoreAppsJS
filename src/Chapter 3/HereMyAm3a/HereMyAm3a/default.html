@@ -5,9 +5,9 @@
     <title>Here My Am! (3a)</title>
 
     <!-- WinJS references -->
-    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
-    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
-    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
 
     <!-- HereMyAm references -->
     <link href="/css/default.css" rel="stylesheet" />
@@ -23,7 +23,9 @@
         <section id="section" aria-label="Main content" role="main">
             <div id="photoSection" class="subsection" aria-label="Photo section">
                 <h2 class="group-title" role="heading">Photo</h2>
-                <img id="photo" class="graphic" src="images/taphere.png" alt="Tap to capture image from camera" role="img" />
+                <div id="photo" class="graphic">
+                    <img id="photoImg" src="#" alt="Tap to capture image from camera" role="img" draggable="false" />
+                </div>                
             </div>
             <div id="locationSection" class="subsection" aria-label="Location section">
                 <h2 class="group-title" role="heading">Location</h2>

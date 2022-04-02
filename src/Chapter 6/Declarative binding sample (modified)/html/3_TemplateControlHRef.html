@@ -1,0 +1,70 @@
+﻿<!--
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Copyright (c) Microsoft Corporation. All rights reserved
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/css/3_TemplateControlHRef.css" />
+    <script src="/js/3_TemplateControlHRef.js"></script>
+</head>
+<body>
+    <div data-win-control="SdkSample.ScenarioInput">
+        <p>
+            This is the same as scenario 2 except that the contents of the template are stored
+            in a separate HTML file and loaded into the template by reference.
+        </p>
+        <fieldset id="templateControlObject">
+            <legend>Object to edit</legend>
+            <select id="templateControlObjectSelector">
+                <option value="0">Object 1</option>
+                <option value="1">Object 2</option>
+                <option value="2">Object 3</option>
+            </select>
+        </fieldset>
+        <fieldset id="templateControlInputText">
+            <legend>Text</legend>
+            <input type="text" id="templateControlInputTextInput" />
+        </fieldset>
+        <fieldset id="templateControlInputColor">
+            <legend>Color</legend>
+            <ol>
+                <li>
+                    <label for="templateControlInputRed">
+                        Red:
+                    </label>
+                    <input type="text" id="templateControlInputRed" />
+                </li>
+                <li>
+                    <label for="templateControlInputGreen">
+                        Green:
+                    </label>
+                    <input type="text" id="templateControlInputGreen" />
+                </li>
+                <li>
+                    <label for="templateControlInputBlue">
+                        Blue:
+                    </label>
+                    <input type="text" id="templateControlInputBlue" />
+                </li>
+            </ol>
+        </fieldset>
+        <!-- 
+        This is our template control. You'll notice it is not rendered in the UI. Template controls are removed from the DOM
+        when processed in order to prevent them getting hit via CSS selectors or other DOM searches.            
+        -->
+        <div id="templateControlTemplate" data-win-control="WinJS.Binding.Template"
+            data-win-options="{ href : '/html/3_TemplateContents.html', extractChild: true }">
+        </div>
+    </div>
+    <div data-win-control="SdkSample.ScenarioOutput">
+        <div id="templateControlRenderTarget">
+        </div>
+    </div>
+</body>
+</html>

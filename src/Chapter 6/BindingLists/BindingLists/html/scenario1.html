@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/css/scenario1.css" />
+    <script src="/js/scenario1.js"></script>
+</head>
+<body>
+    <div data-win-control="SdkSample.ScenarioInput">
+       <p>This example builds a WinJS.Binding.List on top of an array of simple random numbers, optionally using the binding and proxy constructor options.
+           The raw array as well as the List are shown in the output.</p>
+
+       <p>The two buttons change values in the array and the List, showing the relationship between the two depending on the options:
+            <ul>
+                <li>Binding will have no effect in this scenario because the array contains simple (nonobject) values.</li>
+                <li>Proxy will update the array whenever the List is modified. The List, however, does not update when the array changes and changing the array independently
+                    should be avoided.
+                </li>
+            </ul>
+            
+       </p>
+       <p>Checking either checkbox will recreate the List from the current array.</p>
+       <p>Note that the output is just generated manually in both cases; data binding is not used with the List in this scenario.</p>
+
+        <p>
+            <button id="btnChangeArray">Modify array</button>
+            <button id="btnChangeList">Modify list</button>
+        </p>
+        <p>
+            <span>List options: </span>
+            <label>
+                <input type="checkbox" id="chkBinding"/>Binding
+            </label>
+            <label>
+                <input type="checkbox" id="chkProxy"/>Proxy
+            </label>
+        </p>
+    </div>
+
+    <div data-win-control="SdkSample.ScenarioOutput">
+        <div id="basicBindingOutput">
+            <p>Array contents: <span id="arrayOutput"></span></p>
+            <p>List contents: <span id="listOutput"></span></p>            
+        </div>   
+    </div>
+</body>
+</html>

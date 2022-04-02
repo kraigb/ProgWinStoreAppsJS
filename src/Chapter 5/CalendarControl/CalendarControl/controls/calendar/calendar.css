@@ -1,0 +1,67 @@
+﻿.control-calendar {
+    display: -ms-flexbox;
+    -ms-flex-direction: column;    
+    text-align: center;
+
+    /* default size */    
+    width: 500px;
+    height: 400px;
+    background-color: #fffeed;
+}
+
+.control-calendar .header {
+    display: -ms-flexbox;
+}
+
+.control-calendar .header p {
+    -ms-flex: 1;
+}
+
+.control-calendar .body {
+    -ms-flex: 1;
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    line-height: 100%;
+}
+
+.control-calendar .cell {
+    border-radius: 8px;
+    border: 1px solid gray;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 2px;  
+}
+        
+.control-calendar .today {
+    border-color: Red;
+}
+
+.control-calendar .prev, .control-calendar .next {
+    background-color: #fdfcea;
+    margin: 2px;
+    border: 1px solid #eee;
+}
+
+        
+.control-calendar .cell:hover {
+    background-color: lightgray;
+}
+
+.control-calendar .otherMonth {
+    color: gray;
+}
+
+.control-calendar .thisMonth {
+    font-weight: bold;
+    font-size: large;
+}
+        
+.control-calendar .sunday {
+    color: red;
+}
+
+.control-calendar .daylabel {
+    font-size: large;
+    font-weight: bold;
+}

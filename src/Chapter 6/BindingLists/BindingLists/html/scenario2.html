@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/css/scenario2.css" />
+    <script src="/js/scenario2.js"></script>
+</head>
+<body>
+    <div data-win-control="SdkSample.ScenarioInput">
+       <p>This example builds a WinJS.Binding.List on top of an array of objects (each of which contains a few random numbers), optionally using the binding and proxy constructor options.
+           The raw array as well as the List are shown in the output.</p>
+
+       <p>The two upper buttons change the corresponding collection by replacing objects. The relationships between the array and List are the same as in scenario 1,
+           affected again by the constructor options (changing either checkbox will recreate the List from the current array):
+            <ul>
+                <li>Binding will make each object in the list observable. This is demonstrated by lower control that's data-bound to the List's first item.</li>
+                <li>Proxy will, as in scenario 1, update the array whenever the List is modified.</li>
+            </ul>
+            
+       </p>
+       <p>The lower two buttons change the corresponding collection by changing object properties. In both cases, changes are reflected both ways even without Proxy checked,
+           as both collections maintain references to the same in-memory object.
+       </p>
+       
+        <p>
+            <button id="btnChangeArray">Modify array objects</button>
+            <button id="btnChangeList">Modify list objects</button>            
+        </p>
+        <p>
+            <span>List options: </span>
+            <label>
+                <input type="checkbox" id="chkBinding"/>Binding
+            </label>
+            <label>
+                <input type="checkbox" id="chkProxy"/>Proxy
+            </label>
+        </p>
+        <p><strong>Note: </strong>If you've used the Modify buttons above, check one of the options to recreate the List from the array before using the buttons below.</p>
+        <p>            
+            <button id="btnChangeArrayByProperties">Modify array object properties</button>
+            <button id="btnChangeListByProperties">Modify List object properties</button>
+        </p>
+    </div>
+
+    <div data-win-control="SdkSample.ScenarioOutput">
+        <div id="basicBindingOutput">
+            <p>Array contents: <span id="arrayOutput"></span></p>
+            <p>List contents: <span id="listOutput"></span></p>            
+            <p>Binding to List item getAt(0): <span id="boundOutput" data-win-bind="style.backgroundColor: color; innerText: color"></span></p>
+        </div>   
+    </div>
+</body>
+</html>

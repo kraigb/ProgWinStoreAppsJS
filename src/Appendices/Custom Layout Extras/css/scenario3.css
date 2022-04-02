@@ -1,0 +1,15 @@
+﻿.listView_s3 {
+    width: 100%;
+    height: 100%;
+}
+
+.listView_s3 .win-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(180deg);
+    transition: transform 167ms linear, opacity 167ms linear;
+}
+.listView_s3 img {
+    display: block;
+}

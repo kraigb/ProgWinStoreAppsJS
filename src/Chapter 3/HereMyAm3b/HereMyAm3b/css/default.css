@@ -7,7 +7,7 @@
 #mainContent {
 	display: -ms-grid;
 	-ms-grid-columns: 1fr;
-	-ms-grid-rows: 128px 1fr 60px;	
+	-ms-grid-rows: 140px 1fr 60px;	
 }
 
 #header {
@@ -18,18 +18,18 @@
 	-ms-grid-rows: 1fr;
 }
 
-#section {
-	-ms-grid-column: 1;
-	-ms-grid-row: 2;
-	display: -ms-grid;
-	-ms-grid-columns: 120px 1fr 40px 1fr 40px;
-	-ms-grid-rows: 1fr;
-}
-
 .titlearea {
 	-ms-grid-column: 2;
     -ms-grid-row: 1;
-	margin-top: 37px;
+	margin-top: 44px;
+}
+
+#section {
+	-ms-grid-column: 1;
+	-ms-grid-row: 2;	
+	display: -ms-grid;
+	-ms-grid-columns: 120px 1fr 40px 1fr 40px;
+	-ms-grid-rows: 1fr;
 }
 
 #photoSection {
@@ -54,38 +54,54 @@
 }
 
 .graphic {
+    border: 1px solid #404040;
 	-ms-grid-column: 1;
 	-ms-grid-row: 2;
-	width: 100%;
-	height: 100%;
+    width: 100%;
+	height: 100%;    
+}
+
+/* This extra grid provides centering of the image in the photo div. */
+#photo {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 1fr;
+}
+
+#photoImg {
+    -ms-grid-column-align: center;
+    -ms-grid-row-align: center;
+}
+
+/* Styling for smaller landscape layouts (less margin on left) */
+@media screen and (orientation: landscape) and (max-width: 1024px) {	
+	#header {
+		-ms-grid-columns: 40px 1fr 40px;
+	}
+	
+	#section {
+		-ms-grid-columns: 40px 1fr 40px 1fr 40px;
+	}	
 }
 
 
-@media screen and (-ms-view-state: fullscreen-landscape)
-{
-}
-
-@media screen and (-ms-view-state: filled)
-{
-}
-
-@media screen and (-ms-view-state: snapped)
-{	
+/* Styling for portrait aspect ratios (width/height < 1)*/
+@media screen and (orientation: portrait) and (min-width: 500px) {
 	#mainContent {
-		-ms-grid-rows: 128px 1fr 10px;
+		-ms-grid-rows: 120px 1fr 40px;
+	}
+		
+	#header {        
+		-ms-grid-columns: 30px 1fr 30px;		
 	}
 
-	#header {
-		-ms-grid-columns: 20px 1fr 10px;
+	.titlearea {
+		margin-top: 24px;
 	}
 
 	#section {
-		-ms-grid-columns: 20px 1fr 10px;
-		-ms-grid-rows: 1fr 20px 1fr;
-	}
-
-	.titlearea {		
-		margin-top: 68px;
+        -ms-grid-columns: 30px 1fr 30px;
+        -ms-grid-rows: 1fr 30px 1fr;
 	}
 
 	#photoSection {
@@ -97,30 +113,67 @@
 		-ms-grid-column: 2;
 		-ms-grid-row: 3;
 	}
+}
 
-	.subsection {		
+/* Styling for narrow portrait aspect ratios (width/height < 1)*/
+@media screen and (orientation: portrait) and (max-width: 499px) {	
+	#mainContent {
+		-ms-grid-rows: 100px 1fr 20px;
+	}
+
+	#header {
+		-ms-grid-columns: 20px 1fr;
+	}
+	
+	.titlearea {
+		margin-top: 54px;
+	}
+
+	#section {		
+        -ms-grid-columns: 20px 1fr 10px;
+        -ms-grid-rows: 1fr 20px 1fr;
+	}	
+    
+	#photoSection {
+		-ms-grid-column: 2;
+		-ms-grid-row: 1;
+	}
+
+	#locationSection {
+		-ms-grid-column: 2;
+		-ms-grid-row: 3;
+	}
+
+	.subsection {
 		-ms-grid-rows: 20px 1fr;		
 	}
 }
 
-@media screen and (-ms-view-state: fullscreen-portrait)
-{	
-	#header {
-		-ms-grid-columns: 100px 1fr 30px;
-	}
+/* Adjustments for font sizes, taken from WinJS 1.0 as they were removed for WinJS 2.0 */
+@media screen and (orientation: portrait) and (max-width: 499px) {	
+    h1, .win-type-xx-large {
+        font-size:20pt;
+        font-weight: 200;
+        line-height: 1.2;
+    }
 
-	#section {
-		-ms-grid-columns: 100px 1fr 30px;
-		-ms-grid-rows: 1fr 30px 1fr;
-	}
+    h2, .win-type-x-large {
+        font-size: 11pt;
+        font-weight: 600;
+        line-height: 1.3636;
+    }
 
-	#photoSection {
-		-ms-grid-column: 2;
-		-ms-grid-row: 1;
-	}
+    h3, .win-type-x-large {
+        font-size: 11pt;
+        font-weight: 400;
+        line-height: 1.3636;
+    }
 
-	#locationSection {
-		-ms-grid-column: 2;
-		-ms-grid-row: 3;
-	}
+    h1.win-type-ellipsis, .win-type-xx-large.win-type-ellipsis {
+        line-height: 1.5;
+    }
+
+    h2.win-type-ellipsis, .win-type-x-large.win-type-ellipsis {
+        line-height: 1.3636;
+    }
 }

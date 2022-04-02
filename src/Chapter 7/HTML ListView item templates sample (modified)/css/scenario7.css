@@ -1,0 +1,70 @@
+﻿/* Templates for multisized items in the ListView */
+/* Small size */
+.page7 .win-horizontal .win-gridlayout .win-container {        
+    margin: 9px 7px 3px 2px;  /* top, right, bottom, left*/
+}
+
+
+.page7 .smallListIconTextItem
+{
+    width: 145px;
+    height: 70px;
+    padding: 5px;
+    overflow: hidden;
+    background-color: Pink;
+    display: -ms-grid;
+}        
+
+/* Medium size */ 
+.page7 .mediumListIconTextItem
+{
+    width: 309px;
+    height: 70px;
+    padding: 5px;
+    overflow: hidden;
+    background-color: LightGreen;
+    display: -ms-grid;
+}
+
+/* Large size */ 
+.page7 .largeListIconTextItem
+{
+    width: 309px;
+    height: 162px;
+    padding: 5px;
+    overflow: hidden;
+    background-color: LightBlue;
+    display: -ms-grid;
+}
+
+/* Template for items in the ListView */ 
+.page7 .regularListIconTextItem
+{
+    width: 130px;
+    height: 40px;
+    padding: 5px;
+    overflow: hidden;
+    display: -ms-grid;
+}
+
+    .page7 img.regularListIconTextItem-Image 
+    {
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+        -ms-grid-column: 1;
+    }
+
+    .page7 .regularListIconTextItem-Detail
+    {
+        margin: 5px;
+        -ms-grid-column: 2;
+    }
+   
+/* CSS applied to the ListView */
+.page7 #listView
+{
+    width: 800px;
+    height: 600px;
+    border: solid 2px rgba(0, 0, 0, 0.13);
+}

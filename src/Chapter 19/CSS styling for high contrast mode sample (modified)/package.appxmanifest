@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="ProgrammingWin-JS-CH19-HighContrastCSS" Version="2.0.0.0" Publisher="CN=kraigb" />
+  <Properties>
+    <DisplayName>HighContrastCSS JS sample (modified)</DisplayName>
+    <PublisherDisplayName>Kriag Brockschmidt</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="en-US" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="HighContrastCSS JS sample (modified)" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="HighContrastCSS JS sample (modified)" ForegroundText="light" BackgroundColor="#003765" ToastCapable="false">
+        <DefaultTile ShortName="HCCSS JS" ShowName="allLogos" />
+        <SplashScreen Image="images\splashscreen.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

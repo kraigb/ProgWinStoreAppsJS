@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>XBoxController</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+    
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <h1>XBox 360 Controller Access</h1>
+    <p>
+        <button id="btnAcquire">Acquire Device</button>
+    </p>
+    <p id="txtOutput"></p>
+    <p id="txtReport">
+        <!-- Note: the id's here match the fields generated in the input event hander -->
+        id: <span id="output_id"></span><br/>
+        size: <span id="output_size"></span><br />
+        raw report: <span id="output_rawReport"></span><br />
+
+        <br /><em>Buttons</em><br />
+        Start: <span id="output_buttonStart"></span><br />
+        Back: <span id="output_buttonBack"></span><br />
+        Left Stick: <span id="output_buttonLeftStick"></span><br />
+        Right Stick: <span id="output_buttonRightStick"></span><br />        
+        LB: <span id="output_buttonLB"></span><br />
+        RB: <span id="output_buttonRB"></span><br />
+        Xbox: <span id="output_buttonXbox"></span><br />
+        A: <span id="output_buttonA"></span><br />
+        B: <span id="output_buttonB"></span><br />
+        X: <span id="output_buttonX"></span><br />
+        Y: <span id="output_buttonY"></span><br />
+
+        <br/><em>Numeric Values</em><br/>
+        DPad direction: <span id="output_dpad"></span><br />
+        Triggers: <span id="output_triggers"></span><br />        
+        Left Stick X: <span id="output_stickLeftX"></span><br />
+        Left Stick Y: <span id="output_stickLeftY"></span><br />
+        Right Stick X: <span id="output_stickRightX"></span><br />
+        Right Stick Y: <span id="output_stickRightY"></span><br />
+
+        <br /><em>Unused Values</em><br />
+        Unused 1: <span id="output_unused1"></span><br />
+        Unused 2: <span id="output_unused2"></span><br />
+        Unused 3: <span id="output_unused3"></span><br />
+        Unused 4: <span id="output_unused4"></span><br />
+
+</body>
+</html>

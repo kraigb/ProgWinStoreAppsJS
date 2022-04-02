@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Map</title>
+        <script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+        
+        <script type="text/javascript">            
+            //Global variables here
+            var map = null;
+
+            document.addEventListener("DOMContentLoaded", init);
+
+            //All window.onmessage handler code is no longer necessary with the webview
+
+            function notifyParent(event, args) {
+                if (typeof args == "undefined") {
+                    args = {};
+                }
+
+                //Add event name to the arguments object and raise the event
+                args["event"] = event;
+
+                //This function requires a string argument
+                window.external.notify(JSON.stringify(args));
+            }
+
+            //Create the map (though the namespace won't be defined without connectivity)
+            function init() {
+                if (typeof Microsoft == "undefined") {
+                    return;
+                }
+
+                map = new Microsoft.Maps.Map(document.getElementById("mapDiv"), {
+                    //NOTE: replace these credentials with your own obtained at
+                    //http://msdn.microsoft.com/en-us/library/ff428642.aspx
+                    credentials: "AhTTNOioICXvPRPUdr0_NAYWj64MuGK2msfRendz_fL9B1U6LGDymy2OhbGj7vhA",
+                    //zoom: 12,
+                    mapTypeId: Microsoft.Maps.MapTypeId.road
+                });
+            }
+            
+            function pinLocation(argsString) {
+                var args = JSON.parse(argsString);
+                console.log("entering pinLocation, lat = " + args.lat + ", long = " + args.long);
+
+                if (map === null) {
+                    throw "No map has been created";
+                }
+
+                console.log("getting variables");
+                var location = new Microsoft.Maps.Location(args.lat, args.long);
+                var pushpin = new Microsoft.Maps.Pushpin(location, { draggable: true });
+
+                Microsoft.Maps.Events.addHandler(pushpin, "dragend", function (e) {
+                    var location = e.entity.getLocation();
+                    notifyParent("locationChanged", { latitude: location.latitude, longitude: location.longitude });
+                });
+
+                console.log("added handler");
+                map.entities.push(pushpin);
+                console.log("pushpin added");
+                map.setView({ center: location, zoom: 12, });
+                console.log("returning");
+                return "success"; //Can return only string values; other types are ignored
+            }
+
+            function setZoom(zoom) {
+                if (map === null) {
+                    throw "No map has been created";
+                }
+
+                map.setView({ zoom: zoom });
+            }
+        </script>
+    </head>
+    <body>
+        <div id="mapDiv"></div>
+    </body>
+</html>

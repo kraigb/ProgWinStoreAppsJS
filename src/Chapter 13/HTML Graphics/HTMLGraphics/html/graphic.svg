@@ -1,0 +1,6 @@
+﻿<svg width="350" height="200" style="z-index:1">
+    <rect id="r" x="0" y="0" width="350" height="200" stroke="#A20" fill="#ACF" stroke-width="2"></rect>
+    <line id="l" x1="70" y1="70" x2="180" y2="30" stroke="#A3A" stroke-width="3"></line>
+    <circle id="c" cx="240" cy="80" r="40" fill="#FE4" stroke="#F83" stroke-width="3"></circle>
+    <text id="t" x="20" y="180" font-family="Arial" font-style="italic" font-size="60" fill="#FFF">Press Start</text>
+</svg>

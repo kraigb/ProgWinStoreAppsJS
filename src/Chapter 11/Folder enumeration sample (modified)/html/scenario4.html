@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="/js/scenario4.js"></script>
+</head>
+<body>
+    <div data-win-control="SdkSample.ScenarioInput">
+        <p>Get all the files in the picked folder, then indicate their location
+           (This PC, SkyDrive, Network, or Application Content) and whether they are available offline.</p>
+        <p>Use the drop-down list to select a CommonFileQuery to run. Note that not all folders support all common file queries.</p>
+        <button class="action" id="getFiles">Get files</button>
+        <label id="labelQueries">CommonFileQuery:</label>
+        <select id="selectQuery">
+            <option value="defaultQuery">defaultQuery</option>
+            <option value="orderBySearchRank">orderByName</option>
+            <option value="orderBySearchRank">orderBySearchRank</option>
+            <option value="orderByTitle">orderByTitle</option>
+            <option value="orderByDate">orderByDate</option>
+            <option value="orderByMusicProperties">orderByMusicProperties</option>
+        </select>
+    </div>
+    <div data-win-control="SdkSample.ScenarioOutput">
+        <div>
+            <ul id="itemsList" class="outputList"></ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+﻿body {
+    
+}
+
+.main {
+    padding: 4px 10px 0px 10px;
+}
+
+#outputElement {
+    color: darkgreen;
+}
+
+/* A little spacing between buttons */
+.button {    
+    margin-right: 4px;
+}
+

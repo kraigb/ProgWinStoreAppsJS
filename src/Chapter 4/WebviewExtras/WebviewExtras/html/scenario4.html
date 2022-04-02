@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Scenario 4: Share with other apps (modified from sample)</title>
+    <link rel="stylesheet" href="/css/scenario4.css" />
+    <script src="/js/scenario4.js"></script>
+</head>
+<body>
+    <div class="page4">
+        <div data-win-control="SdkSample.ScenarioInput">
+            <p>Apps with a Webview control can share content from the webview itself through the element's
+            captureSelectedContentToDataPackageAsync method. This produces a data package that can be 
+            supplied directly to the Share charm's request. </p>
+            <p>The Share button will invoke the Share charm to share either the selected content in the Webview 
+            or a screenshot of the whole Webview content if nothing is selected.</p>
+            <button id="shareButton">Share</button>        
+        </div>
+        <div class="page4" data-win-control="SdkSample.ScenarioOutput" id="outputContainer">
+            <x-ms-webview id="webview4"></x-ms-webview>
+        </div>
+    </div>
+</body>
+</html>

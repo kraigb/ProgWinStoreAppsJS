@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/css/scenario3.css" />
+    <script src="/js/scenario3.js"></script>
+</head>
+<body>
+    <div data-win-control="SdkSample.ScenarioInput">
+       <p>This example builds a WinJS.Binding.List from scratch using its push method, so there's no underlying array. Each item contains a random number from 1-100 and
+           a random blue color value.</p>
+        <p>It then creates different projections of that same list using createFiltered, createSorted, createGrouped, and combinations of these.</p>
+        <p>The Modify List button repopulates the original List to show that the projections automatically update. The Modify Projection button changes
+            properties of the first item in the grouped+sorted projection, showing that the change propagates to the underlying List as well as the projections.
+        </p>
+
+        <p>
+            <button id="btnChangeList">Modify list</button>
+            <button id="btnChangeProjection">Modify projection</button>            
+        </p>
+    </div>
+
+    <div data-win-control="SdkSample.ScenarioOutput">
+        <div id="basicBindingOutput">
+            <p>Raw list: <span id="listOutput"></span></p>
+            <p>Filtered by number > 50: <span id="filter1Output"></span></p>
+            <p>Filtered by blueness > 192: <span id="filter2Output"></span></p>
+            <p>Full sorted list: <span id="sorted1Output"></span></p>
+            <p>Full sorted list by blueness: <span id="sorted2Output"></span></p>
+            <p>Filtered and sorted by blueness: <span id="sorted3Output"></span></p>
+            <p>Full list grouped by decades: <span id="grouped1Output"></span></p>
+            <p>Group data: <br /><span id="groups1Output"></span></p>
+            <p>Full list grouped by decades, reverse sorted : <span id="grouped2Output"></span></p>
+            <p>Group data: <br /><span id="groups2Output"></span></p>
+        </div>   
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    
+    <script src="/js/scenario8.js"></script>
+</head>
+<body>
+    <div data-win-control="SdkSample.ScenarioInput">
+        <p>This FlipView is created on a StorageDataSource for the pictures library using a declarative template.</p>
+    </div>
+    
+    <div data-win-control="SdkSample.ScenarioOutput">
+        <!-- Note: this template isn't used with the code as-is; see the flipview control declaration below -->
+        <div id="pictures_ItemTemplate" data-win-control="WinJS.Binding.Template">
+            <div class="overlaidItemTemplate">
+                <img class="image" data-win-bind="src: thumbnail InitFunctions.thumbURL; alt: name WinJS.Binding.oneTime" />
+                <div class="overlay">
+                    <h3 class="ItemTitle" data-win-bind="innerText: name WinJS.Binding.oneTime"></h3>
+                </div>
+            </div>
+        </div>
+
+        <div id="pictures_FlipView" class="flipView"
+            data-win-control="WinJS.UI.FlipView"
+            data-win-options="{ itemTemplate: pictures_ItemTemplate }">
+            <!-- Data source is set in code, necessary with StorageDataSource -->
+        </div>
+    </div>
+</body>
+</html>

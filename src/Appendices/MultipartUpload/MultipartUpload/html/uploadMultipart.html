@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/css/default.css" />
+    <script src="/js/uploadMultipart.js"></script>
+</head>
+<body>
+    <div data-win-control="SdkSample.ScenarioInput">
+        <p>A multipart upload consists of combining individual parts to create a single HTTP request to the server. To run this scenario, you can do two things:</p>
+        <ul><li>Copy the 
+            MultipartUpload.aspx and web.config pages from the MultipartUploadServer folder in the Appendices' companion content to a folder named MultipartUploadExample folder in the localhost.
+            This will typically be c:\inetpub\wwwroot\MultipartUploadExample. This is what the default URI below points to. (In this case you might need to adjust permissions of the folder in the IIS manager to allow writing a file.<br /></li>
+            <li>Load the MultipartUploadServer example into Visual Studio for Web and run it, which runs it in the browser. Copy the URI from the browser and paste it into the field below. The URI will look like http://localhost:60355/MultipartUploadServer/multipartupload.aspx.</li>
+        </ul>
+            
+        <p>Here, on the client side, press the Start Multipart Upload button to begin a transfer of tinyimage.jpg where the request contents
+        will closely mirror those showsn in the Flickr upload POST example on http://www.flickr.com/services/api/upload.example.html. The contents will be written to a multipart-request.txt file in the server folder.</p>
+        <p><label for="serverAddressField">Remote address: </label><input type="text" id="serverAddressField" value="http://localhost/MultipartUploadExample/MultipartUpload.aspx" /></p>
+        <p>
+            <button class="action" id="StartMultipartUpload">Start Multipart Upload</button>                        
+        </p>
+    </div>
+    <div data-win-control="SdkSample.ScenarioOutput">
+        <p id="outputConsole"></p>
+    </div>
+</body>
+</html>

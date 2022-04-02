@@ -1,0 +1,34 @@
+﻿body {
+    margin: 10px;
+    overflow: auto;
+}
+
+button {
+    margin: 5px;
+}
+
+#thumbs {
+    display: -ms-grid;
+    -ms-grid-columns: 360px 150px;
+    -ms-grid-rows: 1fr;    
+    -ms-grid-column-align: start;
+}
+
+#progressRing {
+    -ms-grid-column: 2;
+    -ms-grid-row-align: center;
+    margin: 10px;
+}
+
+#progressSync, #progressAsync {
+    margin-left: 40px;
+    display: none;
+}
+
+#testPerf {
+    margin-left: 80px;
+}
+
+#convertViaTemp {
+    margin-left: 40px;
+}
