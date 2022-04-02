@@ -1,0 +1,126 @@
+﻿// Default language resources for Here My Am (17)
+
+{
+    //
+    // pages/home/home.js
+    //
+    "foldername"          : "HereMyAm",
+    "_foldername.comment" : "Not translated",
+
+    "share_title"          : "Here My Am!",
+    "_share_title.comment" : "Not translated",
+
+    "location_formatShort"           : "At (%s, %s)",
+    "_location_formatShort_comment"  : "Used to format a short string with latitude and longitude, as in 'At (120, 45)",
+
+    "location_formatLong"            : "At latitude %s, longitude %s",
+    "_location_formatLong_comment"   : "Used to format a long with latitude and longitude, as in 'At latitude 120, longitude 45",
+
+   
+    //
+    // default.js
+    // Settings panel commands
+    //
+    "about_command"   : "About",
+    "help_command"    : "Help",
+    "privacy_command" : "Privacy Statement",
+
+    //
+    // app manifest
+    //
+    "app_title"               : "Here My Am! (17)",
+    "_app_title.comment"      : "Not translated: App title used for the app display name and main page heading",
+
+    "app_description"          : "Here My Am! (17) has been globalized (removing locale-specific assumptions) and localized into several languages by moving language-specific strings into resource files and providing localized images.",
+    "_app_description.comment" : "For the manifest only; not translated.",
+
+    "package_displayname"          : "Here My Am! (17)",
+    "_package_displayname.comment" : "Not translated; Used in the Windows Store; will typically match app_title",
+
+
+    //
+    // pages/home/home.html
+    //
+    "heading_photo"          : "Photo",
+    "_heading_photo.comment" : "Heading above the picture area",
+
+    "photo_alt"              : "Tap to capture image from camera",
+    "photo_line1"            : "Tap to capture image from camera",
+    "photo_line2"            : "~",    
+    "_photo_alt.comment"     : "Instructional text for photo area; break long lines into line1 and line2 for display",
+    "_photo_line2.comment"   : "Use ~ in line2 if there is no text",
+
+    "heading_location"             : "Location",
+    "_heading_location.comment"    : "Heading above the map area",
+
+    "location_errorImage"          : "Could not create the map. Tap to try again.",
+    "location_errorImage1"         : "Could not create the map",
+    "location_errorImage2"         : "Tap to try again",   
+    "_location_errorImage.comment" : "Instructional text for error in the map area; break into 1 and 2 for word wrapping, use ~ in 2 if no text.",
+
+    "geoloc_attempt"               : "Attempting to obtain geolocation...",
+    "_geoloc_attempt.comment"      : "Flyout message when waiting for geolocation to return",
+
+    "error_obtaingeoloc"           : "Unable to obtain geolocation; check<br />permissions and use the app bar to try again.",
+    "_error_obtaingeoloc.comment"  : "Contents of error message overlay on the map",
+
+    //aria-label attributes
+    "aria_header"       : "Header content",
+    "aria_main"         : "Main content",
+    "aria_photo"        : "Photo section",
+    "aria_location"     : "Location section",
+    "aria_geolocflyout" : "Trying geolocation",
+    
+
+    //
+    // default.html
+    //    
+    "appbar_label1"       : "Load picture",
+    "appbar_tooltip1"     : "Load a picture through the file picker",
+    "appbar_label2"       : "Recent pictures",
+    "appbar_tooltip2"     : "Browse recent pictures taken in the app",
+    "appbar_label3"       : "Refresh location",
+    "appbar_tooltip3"     : "Refresh your location with current GPS coordinates",
+
+
+    //
+    // html/about.html
+    // These make up the page content for the About settings command
+    //    
+    "about1"          : "Here My Am!<br />Version 1.0.0.0<br />",
+    "_about1.comment" : "'Here My Am!' app title is not localized.",
+    "about2"          : "From <em>Programming Windows 8 Apps with HTML and JavaScript</em><br />by Kraig Brockschmidt<br />kraigb@microsoft.com",
+    "about3"          : "A free eBook Published by Microsoft Press<br /><a href='http://go.microsoft.com/FWLink/?Linkid=269853'>Download Here</a>",
+    "aria_about"      : "About",
+
+    //
+    // html/help.html
+    //
+    
+    "help1"          : "Here My Am! helps you announce yourself to the world!",
+    "_help1.comment" : "'Here My Am!' app title is not translated",
+    "help2"          : "Begin by tapping on the image area on the left side to take a photo with your device's camera, or load one directly using the app bar commands.",
+    "help3"          : "Your location will be set automatically if you allow the app to use Location services. Once located, you can also drag the pushpin on the map to adjust your location if desired.",
+    "help4"          : "If the app cannot access your location, use the Permissions settings to allow it, then use the Refresh Location command on the app bar.",
+    "help5"          : "Once you have a picture and a location, invoke the Share charm to select an app through which you can share the image and your coordinates.",
+    "aria_help"      : "Help",
+
+    //
+    // html/privacy.html
+    //     
+    "privacy_URI"  : "http://www.kraigbrockschmidt.com/src/HereMyAm_PrivacyStatement.html",
+    "aria_privacy" : "Privacy",
+
+    //
+    // Text for online (web hosted) privacy statement page
+    //     
+    "privacy1"          : "Here My Am! will attempt to access your location if you allow it, and will also use your webcam to take a picture, if you also allow it.",
+    "_privacy1.comment" : "'Here My Am!' app title is not translated",
+    "privacy2"          : "Pictures are automatically stored in your Pictures Library in a HereMyAm folder. Your location may be saved in the app's private app data for the purpose of restarting the app if it's suspended and terminated.",
+    "_privacy2.comment" : "'HereMyAm' folder name is not translated",
+    "privacy3"          : "Neither pictures nor your location are transmitted elsewhere unless you explicitly invoke the Share charm and choose to share these details with a target app.",
+    "privacy4"          : "No other personal information is collected, stored, or shared.",
+    "privacy5"          : "And don't quote me on how legally binding all of this is...it's just a sample!"
+
+}
+

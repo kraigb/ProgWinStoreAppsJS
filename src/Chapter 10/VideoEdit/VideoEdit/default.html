@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>VideoEdit</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- VideoEdit references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <div id="mainContent">
+        <header id="header" aria-label="Header content" role="banner">
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Video Pixel Manipulation</span>
+            </h1>
+        </header>
+        <section id="section" aria-label="Main content" role="main">
+            <video id="video1" src="Rocket01.mp4" muted style="display: none"></video>
+            <canvas id="canvas1" width="640" height="480"></canvas>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PointerEvents</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- PointerEvents references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <p id="header">
+        <input id="chkMouse" type="checkbox" checked /> Ignore mouse events&nbsp;&nbsp;&nbsp;
+        <input id="chkPointer" type="checkbox" checked /> Ignore pointer events&nbsp;&nbsp;&nbsp;
+        <input id="chkGesture" type="checkbox" /> Ignore gesture events
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show:</span>
+        <select id="selectProperty">
+            <option id="screen">Screen coordinates (screenX/Y)</option>
+            <option id="client">Client coordinates (clientX/Y)</option>
+            <option id="offset">Offset coordinates (offsetX/Y)</option>
+            <option id="translation">Translation (translationX/Y)</option>            
+            <option id="expansion">Scale & Expansion (scale, expansion, velocityExpansion)</option>
+            <option id="rotation">Rotation (rotation, velocityAngular)</option>
+            <option id="velocity">Velocity</option>
+        </select>   
+    </p>
+
+    <div id="divElement" style="width: 500px; border: 2px solid blue;">
+        <p>Pointer and gesture events will be picked up in this element and logged to the list to the right.</p>        
+    </div>
+
+    <div id="divOut">
+		<button id="clear">clear</button>
+		<div id="logContainer">
+			<div id="log"></div>
+		</div>			
+	</div>
+</body>
+</html>

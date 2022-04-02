@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="ProgrammingWin8-JS-CH3-HereMyAm3b" Version="1.0.0.0" Publisher="CN=kraigb" />
+  <Properties>
+    <DisplayName>Here My Am! (3b)</DisplayName>
+    <Description>HereMyAm</Description>
+    <PublisherDisplayName>Kraig Brockschmidt</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="Here My Am! (3b)" Logo="images\tile.png" SmallLogo="images\smalllogo.png" Description="Here My Am! (3b) is a branded version of the 3a app, demonstrating how to incorporate multiple images for different pixel densities. Note that because we have the app name in the tiles, we could turn off &quot;Show Name&quot; below to supress the label in the tile, but we're leaving it here so that different versions of this app can be distinguished on the Start page without having to modify the tiles." ForegroundText="light" BackgroundColor="#00B294">
+        <DefaultTile ShowName="allLogos" WideLogo="images\widetile.png" />
+        <SplashScreen Image="images\splashscreen.png" BackgroundColor="#00B294" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="picturesLibrary" />
+    <Capability Name="internetClient" />
+    <DeviceCapability Name="webcam" />
+    <DeviceCapability Name="location" />
+  </Capabilities>
+</Package>

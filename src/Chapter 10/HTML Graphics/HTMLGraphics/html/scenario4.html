@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/css/scenario4.css" />
+    <script src="/js/scenario4.js"></script>
+</head>
+<body>
+    <div data-win-control="SdkSample.ScenarioInput">
+        <p>Illuistrates the difference between a canvas element scaled after its drawn, which gets pixelated, and a canvas that is redrawn to a new scale, which remains sharp.</p>
+        <input type="checkbox" id="check1"/><span>Apply scaling</span>
+    </div>
+    <div data-win-control="SdkSample.ScenarioOutput">
+        <div id="canvasElement1">
+            <p class="win-type-x-large">Scaled canvas:</p>
+            <canvas id="canvas1"></canvas>            
+        </div>
+
+        <div id="canvasElement2">
+            <p class="win-type-x-large">Redrawn canvas:</p>
+            <canvas id="canvas2"></canvas>
+        </div>
+    </div>
+</body>
+</html>

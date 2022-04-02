@@ -1,0 +1,38 @@
+﻿/* Scenario styles */
+/* Change background color of bar to show off states of custom icons */
+.win-appbar.customIconsAppBar {
+    background-color: rgb(90, 200, 90);
+}
+/* To match background color, set the pressed state icon color */
+.win-appbar.customIconsAppBar button:hover:active .win-commandimage,
+.win-appbar.customIconsAppBar button:-ms-keyboard-active .win-commandimage,
+.win-appbar.customIconsAppBar button[aria-selected=true] .win-commandimage {
+    color: rgb(90, 200, 90);
+}
+/* Override the Song Details button colors */
+.win-appbar.customIconsAppBar button:-ms-keyboard-active .win-commandring,
+.win-appbar.customIconsAppBar button:hover:active .win-commandring {
+    background-color: rgb(0, 0, 0);
+}
+.win-appbar.customIconsAppBar button[aria-selected=true]:hover .win-commandimage,
+.win-appbar.customIconsAppBar button[aria-selected=true]:active .win-commandimage,
+.win-appbar.customIconsAppBar button[aria-selected=true]:-ms-keyboard-active .win-commandimage,
+.win-appbar.customIconsAppBar button[aria-selected=true]:active:hover .win-commandimage {
+    color: rgb(0, 0, 0);
+}
+.win-appbar.customIconsAppBar button[aria-selected=true]:-ms-keyboard-active .win-commandring,
+.win-appbar.customIconsAppBar button[aria-selected=true]:active:hover .win-commandring {
+    background-color: transparent;
+}
+
+/* Set the PNG background position for the Accept button */
+button .win-commandimage, button:hover .win-commandimage, button:active .win-commandimage {
+    background-position: 0 -40px;
+}
+button:hover:active .win-commandimage {
+    background-position: -80px -40px;
+}
+button:disabled .win-commandimage,
+button:hover:active:disabled .win-commandimage {
+    background-position: -120px -40px;
+}

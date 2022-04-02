@@ -1,0 +1,53 @@
+﻿body {
+}
+
+.inline {
+    display: -ms-inline-grid;
+}
+
+.block {
+    display: -ms-grid;
+}
+
+#grid1, #grid2, #grid3 {
+    width: 220px;
+    height: 100px;
+    margin: 10px;
+}
+
+#grid1 {    
+    -ms-grid-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    border: 1px solid blue;
+}
+
+#grid2 {
+    -ms-grid-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;    
+    border: 1px solid green;
+}
+
+#grid3 {
+    -ms-grid-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    border: 1px solid red;
+}
+
+
+#grid1 div, #grid2 div, #grid3 div {    
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;    
+    text-align: center;    
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}

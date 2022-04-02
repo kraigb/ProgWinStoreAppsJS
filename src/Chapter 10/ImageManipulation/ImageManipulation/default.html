@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ImageManipulation</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- ImageManipulation references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <h1>Image Manipulation</h1>
+    <p>
+        <button id="btnLoadImage">Load Image</button>
+        <button id="btnGrayscale" disabled>Grayscale</button>
+        <button id="btnSave" disabled>Save Grayscale</button>
+    </p>
+    <p id="txtInfo"></p>
+    <div id="thumbs">
+        <img id="thumb1" alt="thumbnail" style="display:none" />
+        <progress id="progressRing" class="win-ring win-large"></progress>
+    </div>
+    <img id="image1" alt="source image" style="display:none" />
+    <canvas id="canvas1"></canvas>    
+</body>
+</html>
